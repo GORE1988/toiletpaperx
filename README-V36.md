@@ -1,0 +1,1 @@
+V36 — Bannière recadrée : image complète avec les visages, le titre PAPERX et le bâtiment SUI visibles. CSS sans recadrage (object-fit:contain; hauteur automatique). Simulateur et server.js conservés. Démarrer dans toilet-paperx avec node server.js puis ouvrir http://localhost:3000.

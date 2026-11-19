@@ -1,0 +1,1 @@
+TOILET PaperX V19 — featured real Sui pools (TOILET/SUI, SUI/USDC, DEEP/USDC, WAL/USDC when found), larger search, fighter mascot, thicker leverage slider, neon margin, Join Challenge jump to trading, and live P&L + PNG/X actions in Level 04. Run: cd toilet-paperx then node server.js. No fake prices; missing pairs are omitted.

@@ -1,0 +1,1 @@
+TOILET PaperX V18: Larger, higher contrast text in fighter selector, trade metrics, positions, history and community. Centered, larger PNG/X buttons and score. Single unified neon arcade artwork replaces mismatched side images. Run: cd toilet-paperx && node server.js. Educational paper trading only.

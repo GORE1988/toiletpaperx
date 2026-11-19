@@ -1,0 +1,1 @@
+TOILET PaperX V24: Taller chart; SOUND ON by default; arcade audio level increased. Browser audio policies require first user click or gesture before sound can actually play. Run: cd toilet-paperx then node server.js.

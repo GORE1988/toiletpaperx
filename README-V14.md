@@ -1,0 +1,1 @@
+TOILET PaperX V14 — terminal-first layout. Run: cd toilet-paperx && node server.js. Open http://localhost:3000. Existing fictional trades, local storage, market feed and PNG/X sharing retained. PNG download and X post are two separate steps; X does not auto-attach the downloaded image.

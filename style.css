@@ -1,0 +1,520 @@
+:root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:#080e1b;color:#e8effb}*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer}header{height:76px;border-bottom:1px solid #243049;display:flex;align-items:center;justify-content:space-between;padding:0 26px;background:#0c1424}.brand{display:flex;gap:12px;align-items:center}.brand strong{font-size:20px;letter-spacing:-.5px}.brand em{color:#26d4ab;font-style:normal}.brand small{display:block;font-size:10px;letter-spacing:2.2px;color:#8495b1}.logo{background:#143c39;color:#38e6ba;border:1px solid #2b7067;border-radius:13px;padding:9px 13px;font-size:25px}.head-right{display:flex;align-items:center;gap:12px}.pill{font-size:11px;padding:6px 10px;border-radius:100px;border:1px solid #394a61;white-space:nowrap}.demo{color:#51e7c1;background:#103c35;border-color:#23695b}.live{color:#60e4b6;border-color:#225b4e}.error{color:#ff8796;border-color:#75414b}.muted{color:#8799b5}.outline{background:transparent;border:1px solid #384860;color:#c9d6e8;border-radius:8px;padding:8px 12px}.outline:hover{background:#1d2b40}.layout{display:grid;grid-template-columns:264px minmax(0,1fr);min-height:calc(100vh - 76px)}aside{border-right:1px solid #243049;background:#0b1322;padding:18px 12px;min-width:0}.aside-head{display:flex;justify-content:space-between;align-items:center;margin:0 8px 14px}.aside-head h3{font-size:14px;margin:0}.aside-head span{color:#8799b5;font-size:12px}input[type=text],#search,input[type=number]{background:#111d30;border:1px solid #304058;color:#e8effb;border-radius:8px;padding:12px;width:100%;outline:none}#search:focus,input:focus{border-color:#32bfa5}.small{font-size:11px}#search-hint{margin:12px 8px}.markets{max-height:calc(100vh - 250px);overflow:auto}.market{width:100%;background:transparent;border:1px solid transparent;border-radius:9px;color:#f0f4fc;text-align:left;padding:12px 9px;display:flex;justify-content:space-between;gap:8px}.market:hover,.market.selected{background:#17263b;border-color:#294b5d}.market strong{font-size:13px}.market small{display:block;color:#8b9cb7;font-size:10px;margin-top:5px;max-width:116px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.market-price{text-align:right}.market-price b{font-size:12px}.market-price small{max-width:none}.aside-foot{font-size:10px;color:#657a98;line-height:1.6;margin:20px 8px}main{padding:22px;min-width:0;max-width:1600px;width:100%;margin:auto}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}.stats>div,.chart-panel,.trade-panel,.positions-panel{background:#101a2c;border:1px solid #24334a;border-radius:13px}.stats>div{padding:18px}.stats small{display:block;color:#8b9cb7;font-size:12px;margin-bottom:9px}.stats strong{font-size:21px}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 305px;gap:16px}.chart-panel{min-width:0;overflow:hidden}.market-heading{display:flex;align-items:center;justify-content:space-between;padding:18px 20px}.market-heading h2{margin:0 0 5px;font-size:20px}.price{text-align:right}.price strong{display:block;font-size:21px}.price span{font-size:12px}.positive{color:#27d4a2!important}.negative{color:#ff7186!important}.chart-tools,.chart-foot{border-top:1px solid #24334a;padding:12px 20px;color:#8394ae;font-size:11px;display:flex;justify-content:space-between}.chart{height:360px;display:flex;align-items:center;justify-content:center;padding:10px}.chart svg{width:100%;height:100%}.empty{padding:24px;text-align:center;color:#8c9eb8;font-size:13px}.trade-panel{padding:18px}.trade-title{display:flex;justify-content:space-between;align-items:center;font-weight:700;margin-bottom:18px}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:22px}.tabs button{border:1px solid #324159;background:#142036;color:#9bb0c9;padding:12px;border-radius:8px;font-weight:700}.tabs .long.active{background:#16483e;color:#3ce0b5;border-color:#208f76}.tabs .short.active{background:#512431;color:#ff8996;border-color:#ae4e60}.trade-panel label{display:block;font-size:12px;color:#a6b5ca;margin-bottom:18px}.trade-panel label b{float:right;color:#eaf3ff}.trade-panel input{margin-top:9px}.trade-panel input[type=range]{width:100%;accent-color:#27d4a2}.trade-metrics{border-top:1px solid #27374f;padding:14px 0}.trade-metrics div{display:flex;justify-content:space-between;font-size:12px;padding:7px 0}.trade-metrics span{color:#9bacc5}.primary{width:100%;border:0;border-radius:9px;background:#26c99d;color:#06251d;font-weight:800;padding:15px}.primary:disabled{opacity:.45;cursor:not-allowed}.notice{font-size:12px;color:#ff8996}.trade-panel p{line-height:1.55}.positions-panel{margin-top:16px;padding:16px 18px}.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.section-head h3{margin:0;font-size:15px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;white-space:nowrap}th{text-align:left;color:#8fa2bf;font-size:11px;font-weight:500;border-bottom:1px solid #29374d;padding:12px}td{font-size:12px;border-bottom:1px solid #1d2a3d;padding:13px 12px}.history-row{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #263449;font-size:12px}#toast{position:fixed;bottom:22px;right:22px;background:#203d3b;border:1px solid #36947c;color:#dffcf1;padding:14px 20px;border-radius:9px;opacity:0;pointer-events:none;transition:opacity .2s}#toast.show{opacity:1}@media(max-width:1100px){.workspace{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){header{height:auto;padding:13px;gap:10px;flex-wrap:wrap}.head-right{flex-wrap:wrap}.layout{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid #243049}.markets{display:flex;overflow-x:auto;max-height:140px}.market{min-width:145px}.aside-foot{display:none}main{padding:12px}.stats{gap:7px}.stats>div{padding:11px}.stats strong{font-size:16px}.market-heading{padding:12px}.market-heading h2{font-size:16px}}
+
+/* PaperX V2 — custom degen identity */
+:root{--degen-lime:#c8ff24;--degen-pink:#ff4da8;--degen-purple:#9e66ff}
+body{background:#080712;color:#f4f0ff}header{background:#100d1e;border-bottom:1px solid #37234d}.brand strong{letter-spacing:-.5px}.brand em{color:var(--degen-lime);font-style:normal}.logo-img{width:52px;height:52px;filter:drop-shadow(0 0 13px #b6ff0055)}
+.hero{padding:28px 38px;display:flex;align-items:center;justify-content:space-between;gap:20px;background:radial-gradient(ellipse at 85% 15%,#63275a66,transparent 40%),linear-gradient(110deg,#130c25,#090b1c);border-bottom:1px solid #46305c}.hero-copy{max-width:780px}.eyebrow{font-weight:800;font-size:11px;letter-spacing:2px;color:var(--degen-pink)}.hero h1{font-size:clamp(28px,4vw,58px);line-height:1.02;letter-spacing:-2px;margin:12px 0}.hero h1 span{color:var(--degen-lime);text-shadow:0 0 25px #c8ff2440}.hero p{font-size:15px;color:#c5b9d7;line-height:1.55}.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px;margin-top:20px}.buy-button{background:var(--degen-lime)!important;color:#121015!important;border:2px solid #e4ff9b!important;padding:15px 23px!important;font-weight:950!important;letter-spacing:.4px;box-shadow:5px 5px 0 #9e66ff!important;cursor:pointer}.buy-button:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 #ff4da8!important}.hero-tag{font-size:11px;font-weight:800;color:#e8a4d0}.hero-art{text-align:center;color:#ff7ec0;font-size:10px;letter-spacing:2px;font-weight:900;min-width:160px}.hero-art img{width:142px;max-width:100%;filter:drop-shadow(0 0 28px #baff2255)}.safety-banner{padding:12px 35px;background:#241323;border-bottom:1px solid #753559;color:#e9c9d8;font-size:12px;line-height:1.6}.safety-banner strong{color:#fff}.layout{background:#080712}aside{background:#0e0b1a!important}main{background:#080712!important}.stats>div,.chart-panel,.trade-panel,.positions-panel{background:#131024!important;border-color:#372847!important}.stats strong{color:#f7f3ff}.stats>div:first-child strong{color:var(--degen-lime)}.primary{background:var(--degen-lime)!important;color:#120e1b!important;font-weight:900!important}.pill.demo{background:#35203d!important;color:#f9a4d4!important;border-color:#79416c!important}.market.selected{background:#2b1b41!important;border-left:3px solid var(--degen-lime)!important}.positive{color:#b6ff3b!important}.negative{color:#ff669c!important}.modal-backdrop{position:fixed;inset:0;background:#03030acb;z-index:1000;display:grid;place-items:center;padding:18px}.modal-backdrop[hidden]{display:none}.credit-modal{position:relative;max-width:530px;width:100%;background:#1a112a;border:2px solid #9e66ff;padding:30px;box-shadow:9px 9px 0 #ff4da8;color:#fff}.credit-modal h2{font-size:29px;color:var(--degen-lime);margin:14px 0}.credit-modal p{line-height:1.6;color:#cfc3df}.modal-close{position:absolute;right:12px;top:12px;background:transparent;color:#fff;border:0;font-size:20px;cursor:pointer}.credit-options{display:grid;grid-template-columns:1fr;gap:10px;margin:20px 0}.credit-options button{padding:14px;background:#c8ff24;color:#15101e;font-weight:900;border:0;cursor:pointer}.credit-options button:hover{background:#ff4da8}.modal-warning{font-size:12px!important;background:#2c1a2d;padding:12px;border-left:3px solid #ff4da8}@media(max-width:750px){.hero{padding:20px;flex-wrap:wrap}.hero-art{display:none}.safety-banner{padding:12px 20px}}
+
+/* V3.1 — educational game experience */
+html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}.hero{background:radial-gradient(ellipse at 80% 20%,#8b246044,transparent 50%),radial-gradient(ellipse at 15% 90%,#5234a033,transparent 55%),#100c20}.hero h1{letter-spacing:-1.7px}.hero p{max-width:700px}.academy{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:20px 35px;background:linear-gradient(100deg,#19102e,#0e1023);border-bottom:1px solid #51326c}.academy h2{font-size:21px;margin:7px 0}.academy p{color:#bcb2d3;margin:0;max-width:460px;font-size:13px;line-height:1.5}.academy-steps{display:grid;grid-template-columns:repeat(2,minmax(150px,1fr));gap:9px}.academy-steps span{background:#211736;border:1px solid #4c3169;border-radius:9px;padding:11px 14px;font-size:12px;font-weight:650}.academy-link{color:#c8ff24;text-decoration:none;font-weight:800;font-size:12px;white-space:nowrap}.offer{display:flex;flex-direction:column;gap:8px;padding:18px;border:1px solid #b8ff2b;border-radius:12px;background:linear-gradient(120deg,#243014,#221329);margin:20px 0}.offer-label{font-size:11px;font-weight:850;letter-spacing:1.6px;color:#ff82c4}.offer strong{font-size:clamp(25px,5vw,36px);color:#c8ff24}.offer span{font-size:17px;font-weight:750}.offer small{font-size:11px;color:#ffd5eb}.positions-panel:target{outline:2px solid #c8ff24;outline-offset:2px}#positions-anchor h3{color:#c8ff24}@media(max-width:700px){.academy{padding:20px}.academy-steps{grid-template-columns:1fr 1fr}.academy-steps span{font-size:11px;padding:10px}.hero-tag{max-width:320px;line-height:1.5}}
+/* PaperX FREE Academy V4 — screenshot-inspired neon terminal */
+:root{--degen-lime:#b7ff00;--degen-pink:#ff25a8;--degen-purple:#a96aff}body{background:#080711;color:#faf8ff}header{height:88px;background:#080710;padding:0 24px;border-bottom:1px solid #573078;box-shadow:0 4px 24px #8c26e01b}.brand{gap:16px}.brand .logo-img{width:74px;height:74px;filter:drop-shadow(0 0 10px #ff28aa66)}.brand strong{font-size:clamp(19px,2.5vw,35px);font-weight:1000;letter-spacing:-1.4px;font-style:italic}.brand em{color:var(--degen-lime)}.pink{color:var(--degen-pink)}.brand small{font-size:10px;letter-spacing:3px;color:#ddd3ed}.ecosystem{font-size:25px;font-weight:850;color:#bd92ff;border-left:1px solid #65456f;padding-left:22px;line-height:1}.ecosystem small{display:block;font-size:9px;letter-spacing:3px;color:#c5a9df;margin-top:6px;text-align:center}.head-right{gap:18px}.pill.demo{border:2px solid var(--degen-pink)!important;color:var(--degen-pink)!important;background:#220b22!important;font-size:13px;font-weight:900;letter-spacing:1px;transform:rotate(-3deg);box-shadow:0 0 14px #ff25a850;padding:10px 15px;border-radius:9px}.pill.live{color:var(--degen-lime);border-color:#3d5e20;background:#0d1911}.hero{position:relative;overflow:hidden;min-height:260px;margin:12px 8px 14px;padding:26px 30px 24px;align-items:center;border:1px solid #8d3fc3;border-radius:17px;background:radial-gradient(circle at 90% 110%,#a5ff003b,transparent 23%),radial-gradient(circle at 0% 0%,#ff16a52b,transparent 28%),linear-gradient(115deg,#160c23,#090813 62%,#21102c);box-shadow:inset 0 0 50px #8f20c313}.hero-copy{max-width:calc(100% - 255px);position:relative;z-index:2;text-align:center;flex:1}.hero .eyebrow{color:#f778c8;letter-spacing:2.4px}.hero h1{font-style:italic;font-size:clamp(28px,4vw,66px);font-weight:1000;letter-spacing:-2.6px;margin:7px 0 3px;text-shadow:3px 4px 0 #000}.hero h1 span{color:var(--degen-lime);text-shadow:0 0 19px #b7ff0050}.hero h2{font-size:clamp(16px,2.1vw,31px);margin:4px 0 8px;font-weight:1000;letter-spacing:-.6px}.hero h2 em{font-style:normal;color:var(--degen-lime)}.hero p{color:#e6dce9;font-size:13px;line-height:1.5;margin:8px auto 12px}.hero p b{color:var(--degen-lime)}.hero-actions{justify-content:center;margin-top:12px;gap:20px}.buy-button{border-radius:16px!important;background:var(--degen-lime)!important;border:2px solid #d5ff6c!important;padding:15px 27px!important;font-size:clamp(15px,1.6vw,23px);box-shadow:0 0 21px #b7ff005e!important}.hero-secondary{border:2px solid var(--degen-pink);border-radius:11px;color:#fff;padding:14px 19px;text-decoration:none;font-weight:900;box-shadow:0 0 12px #ff25a83b}.hero-tag{color:#efb2d8;font-size:10px;letter-spacing:1.2px;margin-top:14px}.hero-art{position:relative;min-width:220px;width:230px;z-index:1}.hero-art img{width:205px;filter:drop-shadow(0 0 25px #ff23a36b)}.hero-art>div:last-child{font-size:9px;color:#b7ff00;letter-spacing:1.5px;margin-top:7px}.hero-halo{position:absolute;inset:20px;border-radius:50%;background:#ff28ad33;filter:blur(30px);z-index:-1}.hero-decor{position:absolute;left:16px;top:36px;color:#b7ff00;font-size:45px;transform:rotate(-14deg)}.hero-decor span{color:#ff25a8;display:block;font-size:33px}.safety-banner{background:#140e20;border:1px solid #382345;border-radius:9px;margin:0 8px 12px;padding:10px 18px;color:#bcb2ca;font-size:11px}.safety-banner a{color:var(--degen-lime);float:right;text-decoration:none;font-weight:800}.academy{margin:0 8px 14px;padding:13px 19px;border:1px solid #3c2852;border-radius:12px;background:#130e22}.academy h2{font-size:16px}.academy p{font-size:11px}.academy-steps{gap:6px}.academy-steps span{padding:8px 10px;font-size:10px;background:#20142d}.layout{grid-template-columns:300px minmax(0,1fr);gap:12px;padding:0 8px}.layout aside{border:1px solid #573578!important;border-radius:14px;background:#100c1d!important;padding:15px 9px;height:max-content}.aside-head h3{font-size:20px}.aside-head h3:before{content:'◈ ';color:#b38aff}.market{border-bottom:1px solid #241b32;padding:12px 8px}.market.selected{border:1px solid var(--degen-lime)!important;border-left:3px solid var(--degen-lime)!important;border-radius:11px;background:#25152c!important}.market strong{font-size:12px}.market-price b{font-size:12px}main{padding:0;max-width:none}.stats{gap:10px;margin-bottom:12px}.stats>div,.chart-panel,.trade-panel,.positions-panel{border:1px solid #634080!important;background:linear-gradient(130deg,#171125,#100e20)!important;box-shadow:inset 0 1px 0 #ffffff09;border-radius:13px}.stats>div{min-height:84px;padding:16px}.stats small{font-size:10px;text-transform:uppercase;letter-spacing:.4px}.stats strong{font-size:clamp(14px,1.45vw,22px);letter-spacing:-.6px}.workspace{grid-template-columns:minmax(0,1fr) 315px;gap:12px}.market-heading{padding:16px 19px;border-bottom:1px solid #38264b}.market-heading h2{font-size:21px}.price strong{font-size:22px}.chart-tools{border:0;padding:12px 17px}.timeframe-label b{color:#111;background:var(--degen-lime);padding:5px 12px;border-radius:20px}.chart{height:365px}.chart-foot{border-color:#39254b}.trade-panel{padding:17px}.trade-title{font-size:21px}.tabs .long.active{background:var(--degen-lime);color:#111;border-color:#d7ff8d}.tabs .short.active{background:var(--degen-pink);color:#110914;border-color:#ff92d2}.trade-panel input[type=range]{accent-color:var(--degen-lime)}.primary{font-size:16px;border:1px solid #ddff7c;border-radius:12px;box-shadow:0 0 13px #b7ff0035}.positive{color:#b7ff00!important}.negative{color:#ff438f!important}.positions-panel{margin-top:12px}.site-footer{display:flex;justify-content:space-between;gap:15px;padding:25px 18px;font-size:11px;color:#9285a5}.site-footer span:first-child{color:#b7ff00;font-weight:900}#search,input[type=number]{background:#171228;border:1px solid #534068}.market:hover{background:#241935}.outline:hover,.hero-secondary:hover{border-color:#b7ff00;color:#b7ff00}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #b7ff00;outline-offset:2px}@media(max-width:1250px){.ecosystem{display:none}.layout{grid-template-columns:245px minmax(0,1fr)}.workspace{grid-template-columns:1fr}.hero-art{width:170px;min-width:170px}.hero-art img{width:165px}.hero-copy{max-width:calc(100% - 180px)}}@media(max-width:800px){header{height:auto;padding:12px}.brand .logo-img{width:50px;height:50px}.head-right{gap:8px}.pill.demo{font-size:10px;padding:7px}.hero{padding:20px 14px}.hero-copy{max-width:none}.hero-art,.hero-decor{display:none}.hero h1{font-size:clamp(27px,6vw,45px)}.layout{grid-template-columns:1fr}.layout aside{height:auto}.markets{display:flex;max-height:150px;overflow:auto}.market{min-width:160px}.stats{grid-template-columns:repeat(2,1fr)}.academy{flex-direction:column;align-items:stretch}.site-footer{flex-direction:column}.safety-banner a{float:none;margin-left:10px}}@media(max-width:460px){.brand strong{font-size:18px}.brand small{font-size:8px;letter-spacing:1px}.head-right{width:100%;justify-content:space-between}.hero-actions{flex-direction:column}.hero-secondary,.buy-button{width:100%;text-align:center}.stats strong{font-size:13px}.academy-steps{grid-template-columns:1fr 1fr}}
+
+/* V5 · TOILET Dust community and market resilience */
+.community{display:grid;grid-template-columns:minmax(250px,41%) minmax(0,1fr);gap:24px;align-items:center;margin:0 8px 14px;padding:15px;border:1px solid #673c87;border-radius:15px;background:radial-gradient(circle at 90% 0%,#2c1748,#100d1d 65%);box-shadow:0 0 22px #ff25a812}.community-visual{border-radius:10px;overflow:hidden;background:#090c14;border:1px solid #3b4758}.community-visual img{width:100%;height:100%;min-height:210px;object-fit:cover;display:block}.community-content{min-width:0}.community h2{font-size:clamp(18px,2.2vw,30px);margin:8px 0;color:white}.community h2 span{color:#b7ff00}.community p{color:#d0c4df;font-size:13px;line-height:1.55;margin:10px 0}.token-label{font-size:10px;font-weight:900;letter-spacing:1px;color:#ff79ca;margin-top:12px;display:flex;justify-content:space-between;align-items:center}.token-address{display:block;background:#090a16;border:1px solid #563273;border-radius:7px;padding:11px;overflow-wrap:anywhere;color:#b7ff00;font-size:11px;user-select:all}.copy-token{border:1px solid #ff25a8;color:#fff;background:#3a163b;border-radius:6px;padding:6px 10px;font-size:10px;font-weight:800}.community-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.community-actions a{font-weight:900;font-size:12px;text-decoration:none;padding:12px 14px;border-radius:9px}.community-x{background:#b7ff00;color:#101014}.community-explorer{border:1px solid #ff25a8;color:#fff}.community .community-disclaimer{font-size:10px;color:#a99bb9;margin-bottom:0}.market-error{color:#ffb4d2;background:#2b1429;border:1px solid #783d60;border-radius:9px;padding:10px;font-size:11px;line-height:1.5;overflow-wrap:anywhere;margin-top:10px}.retry-markets{display:block;margin:10px auto;font-size:12px;border-color:#b7ff00;color:#b7ff00}.retry-markets[hidden],.market-error[hidden]{display:none}.chart-fail strong{color:#ffb6da}.chart-fail p{line-height:1.6}.chart-fail button{margin:8px}.chart-fail .small{color:#9183a4}@media(max-width:900px){.community{grid-template-columns:1fr}.community-visual img{max-height:260px;object-position:center}.community-content{padding:4px}}
+
+/* V6 market fixes */
+.sui-official{width:32px;height:32px;object-fit:contain;vertical-align:middle;margin-right:7px}.external-chart-notice{font-size:12px;color:#b7a8d0;padding:9px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#100e1b}.external-chart-notice a{color:#baff00;text-decoration:none}.external-chart-notice button{font-size:11px;padding:5px 10px}.external-chart{width:100%;height:calc(100% - 47px);min-height:340px;border:0;background:#0c0b14}#chart:has(.external-chart){display:block!important;padding:0!important;overflow:hidden!important}
+
+/* V7 — time-limited community challenge */
+.event-bar{margin:12px 8px;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap;padding:18px 24px;border:2px solid #ff25a8;border-radius:15px;background:radial-gradient(circle at 15% 50%,#3b1135,#100c1c 70%);box-shadow:0 0 25px #ff25a828}.event-kicker{color:#ff6dc7;font-size:12px;letter-spacing:1.7px;font-weight:900}.event-title{font-size:clamp(19px,2.4vw,33px);font-weight:1000;font-style:italic}.event-title span{color:#b7ff00}.event-clock{display:flex;gap:8px}.event-clock span{display:flex;flex-direction:column;align-items:center;min-width:61px;padding:9px 11px;background:#090713;border:1px solid #704182;border-radius:10px;font-size:27px;font-weight:900;color:#b7ff00;font-variant-numeric:tabular-nums}.event-clock small{font-size:9px;letter-spacing:1.3px;color:#bdadd2;margin-top:4px}.event-link{color:#fff;text-decoration:none;border:1px solid #ff25a8;border-radius:10px;padding:12px;font-size:12px;font-weight:800}.challenge{margin:0 8px 15px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.8fr);gap:25px;padding:23px;border:1px solid #754494;border-radius:15px;background:linear-gradient(120deg,#20112e,#0f0d1c)}.challenge h2{font-size:clamp(20px,2.7vw,37px);line-height:1.13;margin:12px 0}.challenge h2 span{color:#b7ff00}.challenge p{color:#d4c5e5;font-size:13px;line-height:1.65}.challenge .challenge-note{font-size:11px;color:#a99ab9}.challenge-score{padding:22px;background:#0b0915;border:1px solid #6a3a86;border-radius:12px;text-align:center}.score-caption{font-size:11px;letter-spacing:1.2px;color:#c7b1d6;font-weight:800}.score-big{font-size:clamp(43px,5vw,76px);font-weight:1000;margin:14px 0}.score-equity{font-size:17px;font-weight:800}.score-detail{font-size:12px;color:#b8a8ca;margin:9px 0 16px}.challenge-actions{display:flex;flex-direction:column;gap:10px}.share-x{border-color:#ff25a8;color:#fff;font-weight:800;padding:12px}.share-help{font-size:10px;line-height:1.6;color:#a99ab9;margin-top:12px}.event-expired:not([hidden]){position:fixed;inset:0;z-index:9999;background:#080711f2;display:flex;align-items:center;justify-content:center;padding:24px}.expired-content{max-width:620px;text-align:center;padding:45px;border:2px solid #ff25a8;background:#1c1028;border-radius:20px}.expired-content h2{font-size:clamp(26px,5vw,55px);color:#b7ff00}.expired-content p{line-height:1.6}.expired-content a{display:inline-block;background:#b7ff00;color:#111;text-decoration:none;padding:15px 25px;border-radius:10px;font-weight:900}.event-ended #open,.event-ended #start-trading{opacity:.4;pointer-events:none}@media(max-width:950px){.challenge{grid-template-columns:1fr}.event-bar{justify-content:center;text-align:center}}@media(max-width:520px){.event-clock span{min-width:49px;font-size:21px;padding:7px}.challenge{padding:13px}.event-bar{padding:12px}}
+
+.winner-announcement{margin:18px 0;color:#e6d9ff;font-size:14px;line-height:1.6}.winner-announcement a{color:#b7ff00;text-decoration:underline}
+
+/* V8 usability improvements */
+html{scroll-behavior:smooth}#trading-terminal{scroll-margin-top:12px}.degen-illustration{margin:20px 0 15px;position:relative;overflow:hidden;border-radius:14px;border:1px solid #9b3a9c;box-shadow:0 0 24px #ff20b02c;background:#0d0718}.degen-illustration img{display:block;width:100%;height:clamp(180px,24vw,355px);object-fit:cover;object-position:center 52%}.degen-caption{position:absolute;bottom:0;left:0;right:0;padding:14px 17px;color:#b7ff00;background:linear-gradient(transparent,#100817f5);font-size:12px;font-weight:900;letter-spacing:1px}.challenge-copy{min-width:0}.sui-official{border-radius:7px}.external-chart{height:450px;min-height:380px}.chart:has(.external-chart){height:auto;min-height:480px}.market-loading{padding:18px 10px;color:#d0bde2;font-size:12px;line-height:1.5}.market-loading b{color:#b7ff00}.market-error{white-space:normal}
+
+/* V10 · DEGEN ARCADE — graphic polish, original trading logic retained */
+.academy{gap:24px!important;padding:24px!important;background:radial-gradient(circle at 70% 0%,#29113c,#100b1e 65%)!important;border:1px solid #63317e!important}.academy>div:first-child{max-width:280px}.academy-steps{display:grid!important;grid-template-columns:repeat(4,minmax(135px,1fr))!important;gap:12px!important;flex:1}.academy-step{display:flex;flex-direction:column;gap:8px;min-height:134px;padding:15px!important;border:1px solid #9e4ab1!important;border-radius:16px!important;text-decoration:none!important;color:#fff!important;background:linear-gradient(145deg,#2e153c,#150d25)!important;box-shadow:inset 0 1px #ffffff22,0 7px 25px #0005;transition:transform .2s,box-shadow .2s,border-color .2s}.academy-step:hover{transform:translateY(-5px) rotate(-1deg);border-color:#b7ff00!important;box-shadow:0 0 24px #b7ff0035}.academy-step:nth-child(2){border-color:#ff35a8!important}.academy-step:nth-child(3){border-color:#43d8ff!important}.academy-step:nth-child(4){border-color:#ffce3d!important}.academy-step .step-top{display:flex;justify-content:space-between;align-items:center;color:#ff77c9;font-weight:900;font-size:11px;letter-spacing:1px}.academy-step .step-top i{font-style:normal;font-size:29px}.academy-step strong{font-size:14px;line-height:1.2;font-weight:1000}.academy-step small{font-size:11px;color:#baa9c9}.academy-link{white-space:nowrap}
+.degen-rank{display:inline-block;margin:10px auto 0;padding:9px 21px;color:var(--rank-color,#b7ff00);border:2px solid var(--rank-color,#b7ff00);background:#241333;border-radius:100px;font-size:15px;font-weight:1000;letter-spacing:1px;box-shadow:0 0 22px #ff25a825;transform:rotate(-2deg)}.challenge-score{background:radial-gradient(circle at 50% 5%,#33174b,#0b0915 65%)}.score-big{text-shadow:0 0 24px #ff35a850}
+.layout aside{border:1px solid #8e4bb1!important;box-shadow:0 0 25px #ff35a815!important}.aside-head h3{font-size:18px!important}.market-filters{display:flex;gap:5px;margin:12px 0}.filter-btn{flex:1;min-width:0;border:1px solid #664477;border-radius:9px;padding:9px 4px;color:#bca9d4;background:#22132f;font-weight:900;font-size:10px;cursor:pointer}.filter-btn.active{background:#b7ff00;color:#150b21;border-color:#b7ff00}.market{border:1px solid #3a284d!important;border-radius:12px!important;margin:7px 0!important;padding:12px!important;background:#1b1129!important;transition:transform .18s,box-shadow .18s}.market:hover{transform:translateX(3px);box-shadow:0 0 15px #ff35a828}.market-identity{display:flex;align-items:center;gap:9px;min-width:0}.market-token-icon{display:grid;place-items:center;flex-shrink:0;width:35px;height:35px;background:#302041;border:1px solid #614074;border-radius:11px;font-size:19px}.market-identity span:last-child{min-width:0}.market strong{font-size:13px!important}.market small{font-size:10px!important}.market-price{flex-shrink:0}
+.trade-panel{background:radial-gradient(circle at 90% 0%,#3d1646,#140d23 64%)!important;border:2px solid #a34cb4!important;box-shadow:0 0 22px #ff35a820!important}.trade-kicker{font-size:10px;font-weight:1000;color:#ff48bd;letter-spacing:1.5px;margin-bottom:9px}.trade-title{font-size:clamp(21px,2vw,29px)!important;font-weight:1000!important;font-style:italic}.trade-panel .tabs button{min-height:58px;font-weight:1000;font-size:17px;border-radius:13px}.trade-panel label{font-weight:800}.trade-panel #leverage-label{font-size:25px;color:#b7ff00;text-shadow:0 0 14px #b7ff0060}.degen-level{text-align:center;padding:12px 7px;margin:5px 0 15px;border:1px solid #b7ff00;border-radius:11px;background:#23301a;color:#b7ff00;font-size:12px;font-weight:1000;letter-spacing:.5px}.degen-level.danger{border-color:#ff35a8;background:#38152d;color:#ff35a8}.trade-metrics{border:1px solid #5d3872;border-radius:12px;padding:13px!important;background:#1b102b}.trade-panel #open{min-height:57px;font-weight:1000;letter-spacing:.5px;transition:transform .2s}.trade-panel #open:not(:disabled):hover{transform:scale(1.025)}
+.positions-panel{border:1px solid #76468c!important;background:radial-gradient(circle at 100% 0%,#271334,#110d1f 65%)!important}.positions-panel .section-head h3{font-size:clamp(17px,1.7vw,24px)!important;color:#b7ff00}.positions-panel:nth-last-of-type(1) .section-head h3{color:#ff60b8}.degen-position td{padding-top:18px!important;padding-bottom:18px!important;background:#1b1227}.degen-position.winning td:first-child{border-left:4px solid #b7ff00}.degen-position.losing td:first-child{border-left:4px solid #ff35a8}.trade-mood{display:block;margin-top:5px;color:#b7ff00;font-size:9px;font-weight:900;letter-spacing:.7px}.losing .trade-mood{color:#ff35a8}.history-row{padding:14px 16px!important;margin:8px 0;border:1px solid #50315d;border-radius:12px;background:#201329}.history-row.history-loss{border-left:4px solid #ff35a8}.history-row.history-win{border-left:4px solid #b7ff00}.history-emoji{font-size:19px;margin-right:9px}.close{border-color:#ff35a8!important;border-radius:9px!important}.close:hover{background:#ff35a8!important;color:#13091d!important}
+@media(max-width:1350px){.academy{flex-wrap:wrap}.academy>div:first-child{max-width:none}.academy-steps{flex-basis:100%}.academy-link{margin-left:auto}}@media(max-width:800px){.academy-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}.academy-step{min-height:116px}.market-filters{flex-wrap:wrap}}@media(max-width:450px){.academy-step{padding:10px!important}.academy-step strong{font-size:12px}.academy-step .step-top i{font-size:24px}}
+
+/* V11 — authentic token logos when provided by the market-data source */
+.market-token-icon{overflow:hidden;position:relative}
+.market-token-icon .market-logo{width:29px;height:29px;object-fit:contain;border-radius:50%;display:block}
+.market-token-icon .market-logo[hidden],.market-token-icon .logo-fallback[hidden]{display:none!important}
+.market-token-icon .logo-fallback{font-size:19px}
+
+/* V12: compact-first information architecture. Original functionality is unchanged. */
+html{scroll-behavior:smooth}
+.event-bar{margin:6px 8px!important;padding:8px 18px!important;gap:12px!important}
+.event-kicker{font-size:10px!important}.event-title{font-size:clamp(17px,1.6vw,24px)!important}
+.event-clock span{font-size:19px!important;min-width:46px!important;padding:5px 7px!important}
+.event-link{padding:8px!important}
+.hero{padding:12px 26px!important;min-height:0!important}
+.hero h1{font-size:clamp(25px,2.7vw,41px)!important;margin:5px 0!important}
+.hero h2{font-size:clamp(15px,1.5vw,23px)!important;margin:4px 0!important}
+.hero p{font-size:12px!important;margin:6px 0!important}
+.hero-actions{margin-top:9px!important;gap:9px!important}
+.hero .buy-button{padding:10px 15px!important;font-size:13px!important}
+.hero-art img{width:90px!important}.hero-art{min-width:100px!important}
+.hero-tag{font-size:9px!important;margin-top:6px!important}
+.challenge-compact{display:flex;justify-content:space-between;align-items:center;gap:18px;margin:7px 8px;padding:11px 20px;background:linear-gradient(100deg,#251138,#101021);border:1px solid #963d9e;border-radius:14px}
+.challenge-compact h2{font-size:clamp(18px,2vw,29px);margin:4px 0;color:#fff;font-weight:1000}
+.challenge-compact h2 em{color:#b7ff00;font-style:normal}
+.challenge-compact p{font-size:11px;color:#c8b7d8;margin:0}
+.challenge-cta{white-space:nowrap;text-decoration:none;background:#b7ff00;color:#130c20;padding:12px 15px;border-radius:10px;font-weight:1000;font-size:12px}
+.academy{padding:10px 17px!important;margin:7px 8px!important;gap:12px!important}
+.academy>div:first-child{max-width:200px!important}.academy>div:first-child p{font-size:10px!important;margin:4px 0!important}
+.academy h2{font-size:16px!important;margin:4px 0!important}.academy-steps{gap:7px!important}
+.academy-step{min-height:77px!important;padding:9px!important;gap:3px!important;border-radius:11px!important}
+.academy-step .step-top i{font-size:20px!important}.academy-step strong{font-size:12px!important}.academy-step small{font-size:10px!important}
+.layout{margin-top:6px!important}.layout main{min-width:0}
+.stats{margin-bottom:8px!important}.stats>div{padding:10px!important}
+.workspace{align-items:start!important;gap:10px!important}
+.trade-stack{display:flex;flex-direction:column;gap:10px;min-width:0}
+.trade-stack .challenge-score{padding:12px!important;border:2px solid #b7ff00!important;background:radial-gradient(circle at 50% 0%,#3c144b,#10091b 65%)!important;box-shadow:0 0 20px #b7ff0018}
+.trade-stack .score-big{font-size:clamp(32px,3.2vw,55px)!important;margin:5px 0!important}
+.trade-stack .score-caption{font-size:10px!important}.trade-stack .score-equity{font-size:13px!important}.trade-stack .score-detail{margin:5px 0!important}
+.trade-stack .winner-announcement{display:none!important}
+.trade-stack .challenge-actions{gap:6px!important}.trade-stack .challenge-actions button{padding:10px!important;font-size:11px!important}
+.trade-stack .share-help{font-size:9px!important;margin-top:5px!important}
+.share-card-preview{height:100px;overflow:hidden;border:1px solid #ff25a8;border-radius:10px;margin-bottom:8px;position:relative}
+.share-card-preview img{width:100%;height:100%;object-fit:cover;object-position:center}
+.share-card-preview:after{content:'🎮 YOUR SCORE · LIVE CARD EXPORT';position:absolute;inset:auto 0 0;background:#11081ddd;color:#b7ff00;font-size:10px;font-weight:900;padding:4px}
+.trade-stack .trade-panel{padding:13px!important}.trade-stack .trade-title{font-size:21px!important}
+.trade-stack .trade-panel .tabs button{min-height:43px!important}
+.chart{min-height:420px!important}.chart-panel{min-height:550px!important}
+.challenge-gallery{margin:12px 8px;border:1px solid #754494;border-radius:14px;padding:12px;background:#1a102b}
+.challenge-gallery .challenge-copy{display:grid;grid-template-columns:minmax(220px,1fr) minmax(300px,1.3fr);align-items:center;gap:16px}
+.challenge-gallery h2{font-size:clamp(21px,2.3vw,32px);margin:8px 0}.challenge-gallery h2 span{color:#b7ff00}
+.challenge-gallery p{font-size:12px;color:#cbb9dc;line-height:1.5}
+.challenge-gallery .degen-illustration{grid-column:2;grid-row:1 / span 4;min-width:0}
+.challenge-gallery .degen-illustration img{width:100%;height:auto;display:block}
+.challenge-gallery .challenge-note{font-size:10px}
+.market strong{font-size:17px!important;letter-spacing:.2px}.market small{font-size:12px!important}
+#pair{font-size:clamp(23px,2.3vw,36px)!important;font-weight:1000!important}
+@media(max-width:1100px){.challenge-gallery .challenge-copy{display:block}.challenge-gallery .degen-illustration{margin-top:12px}}
+@media(max-width:850px){.challenge-compact{flex-wrap:wrap}.hero-art{display:none!important}.academy>div:first-child{display:none}.academy-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}.trade-stack{width:100%}.share-card-preview{height:135px}}
+@media(max-width:520px){.event-bar{gap:6px!important}.event-clock span{min-width:40px!important}.challenge-cta{width:100%;text-align:center}.hero{padding:12px!important}}
+
+/* V13 ARCADE EDITION — overrides only; existing market and paper-trading logic untouched */
+.v13-top-shell{margin:6px 8px 9px;border:1px solid #a03bc2;border-radius:15px;overflow:hidden;background:linear-gradient(110deg,#140923,#25103c 62%,#120a20);box-shadow:0 0 25px #f0f3}
+.v13-top-shell .event-bar{margin:0!important;border:0!important;border-bottom:1px solid #64317b!important;border-radius:0!important;padding:6px 14px!important;box-shadow:none!important}
+.v13-top-shell .hero{border:0!important;background:linear-gradient(100deg,#1b0b30,#100a21)!important;padding:7px 15px!important;gap:12px!important;position:relative}
+.v13-hero-poster{width:160px;align-self:stretch;min-height:100px;flex:0 0 160px;background:url('/arcade-hero-v13.jpg') center 35%/cover no-repeat;border:2px solid #ff25a8;border-radius:12px;box-shadow:0 0 20px #ff25a845}
+.v13-top-shell .hero-copy{max-width:none;flex:1}.v13-top-shell .hero h1{font-size:clamp(23px,2.1vw,33px)!important;margin:0!important}.v13-top-shell .hero h2{font-size:clamp(13px,1.25vw,18px)!important}.v13-top-shell .hero p{font-size:11px!important;line-height:1.35!important}.v13-top-shell .hero-art{display:none!important}
+.v13-top-shell .challenge-compact{margin:0!important;border:0!important;border-top:1px solid #64317b!important;border-radius:0!important;padding:7px 15px!important}.v13-top-shell .challenge-compact h2{font-size:clamp(15px,1.5vw,22px)!important;margin:0!important}.v13-top-shell .challenge-compact p{font-size:10px!important}
+.v13-top-shell .academy{margin:0!important;border:0!important;border-top:1px solid #64317b!important;border-radius:0!important;padding:7px 12px!important}.v13-top-shell .academy-step{min-height:66px!important}.v13-top-shell .academy>div:first-child{max-width:155px!important}
+.layout{grid-template-columns:minmax(230px,20%) minmax(0,1fr)!important;gap:9px!important}
+.workspace{grid-template-columns:minmax(0, 0.92fr) minmax(420px,1.08fr)!important;gap:10px!important}
+.chart{height:300px!important;min-height:300px!important}.chart-panel{min-height:0!important}.chart:has(.external-chart){height:auto!important;min-height:330px!important}.external-chart{height:330px!important;min-height:310px!important}
+.v13-chart-sticker{padding:11px 13px;text-align:center;background:linear-gradient(90deg,#1b1030,#311143,#1b1030);color:#c8ff24;font-size:12px;font-weight:1000;letter-spacing:1px;text-shadow:0 0 10px #b7ff0066}
+.trade-stack{gap:8px!important}.trade-stack .challenge-score{position:relative;overflow:hidden;display:grid;grid-template-columns:39% 61%;align-items:center;column-gap:0;text-align:center;padding:9px!important}
+.trade-stack .share-card-preview{grid-row:1/span 7;grid-column:1;height:100%!important;min-height:280px!important;margin:0 9px 0 0!important;align-self:stretch}
+.trade-stack .share-card-preview img{object-fit:cover!important;object-position:28% center!important}
+.trade-stack .v13-score-art{display:none}.trade-stack .score-caption,.trade-stack .degen-rank,.trade-stack .score-big,.trade-stack .score-equity,.trade-stack .score-detail,.trade-stack .challenge-actions,.trade-stack .share-help{grid-column:2;min-width:0}
+.trade-stack .score-big{font-size:clamp(38px,4.1vw,68px)!important;text-shadow:0 0 20px #b7ff0080!important}.trade-stack .score-caption{font-size:12px!important}.trade-stack .score-equity{font-size:15px!important}.trade-stack .degen-rank{font-size:12px!important}.trade-stack .challenge-actions button{font-size:12px!important}
+.trade-stack .trade-panel{background:radial-gradient(circle at 100% 0%,#301348,#120b20 62%)!important;border:2px solid #ff25a8!important}.trade-stack .trade-title{font-size:clamp(22px,2.3vw,32px)!important;text-shadow:0 0 15px #ff25a844}.trade-stack .trade-panel .tabs button{font-size:17px!important;font-weight:1000!important}
+.market strong{font-size:18px!important;font-weight:1000!important}.market-token-icon{width:42px!important;height:42px!important}.market-token-icon .market-logo{width:36px!important;height:36px!important}.aside-head h3{font-size:20px!important}
+.challenge-gallery .degen-illustration img{max-height:390px;object-fit:cover}.community-visual img{max-height:350px;object-fit:cover}.challenge-gallery,.community{box-shadow:0 0 22px #ff25a81c}
+@media(max-width:1250px){.workspace{grid-template-columns:minmax(0,1fr) minmax(340px,1fr)!important}.trade-stack .challenge-score{display:block}.trade-stack .share-card-preview{height:130px!important;min-height:0!important;margin:0 0 9px!important}.v13-top-shell .academy>div:first-child{display:none}}
+@media(max-width:990px){.workspace{grid-template-columns:1fr!important}.layout{grid-template-columns:1fr!important}.v13-top-shell .hero{flex-wrap:wrap}.v13-hero-poster{min-height:110px}.trade-stack .challenge-score{display:grid;grid-template-columns:40% 60%}.trade-stack .share-card-preview{height:100%!important;min-height:230px!important}.trade-stack .academy-steps{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:650px){.v13-top-shell .event-bar{flex-wrap:wrap}.v13-hero-poster{width:100%;flex-basis:100%;height:135px;background-position:center 35%}.trade-stack .challenge-score{display:block}.trade-stack .share-card-preview{height:150px!important;min-height:0!important}.v13-top-shell .academy-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}.v13-top-shell .challenge-compact{flex-wrap:wrap}.v13-top-shell .hero h1{font-size:24px!important}}
+
+/* V14 — terminal-first UX; override V13 visual experiments */
+body{font-size:15px!important;background:#0a0814!important}
+header{padding:9px 16px!important;min-height:62px!important}
+.v13-top-shell{margin:0 0 6px!important}
+.v13-top-shell .event-bar{padding:7px 14px!important;min-height:50px!important;margin:0!important}
+.v13-top-shell .event-title{font-size:clamp(16px,1.5vw,23px)!important}
+.v13-top-shell .event-kicker{font-size:10px!important}
+.safety-banner{padding:5px 12px!important;margin:3px 0 6px!important;font-size:11px!important}
+.v14-terminal-title{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:7px 14px;background:linear-gradient(90deg,#2a113d,#140c21);border:1px solid #663277;border-radius:9px;margin:5px 0 7px;font-size:13px;font-weight:1000;color:#c8ff15;letter-spacing:.5px}
+.v14-terminal-title span:last-child{color:#ff59cf;font-size:11px}
+.layout{grid-template-columns:minmax(245px,19%) minmax(0,1fr)!important;align-items:start!important;gap:9px!important}
+.layout>aside{position:sticky;top:6px;max-height:calc(100vh - 18px);overflow:hidden!important;display:flex;flex-direction:column;padding:10px!important}
+.layout>aside .markets{overflow-y:auto!important;flex:1;min-height:180px!important;max-height:none!important}
+.layout main{min-width:0!important}
+.stats{margin:0 0 7px!important;gap:7px!important}
+.stats>div{padding:9px 12px!important;min-height:65px!important}
+.stats strong{font-size:clamp(16px,1.35vw,23px)!important}
+.workspace{grid-template-columns:minmax(0,1.7fr) minmax(310px,.85fr)!important;align-items:start!important;gap:9px!important}
+.chart-panel{min-width:0!important;overflow:hidden!important}
+.chart{height:390px!important;min-height:390px!important}
+.chart:has(.external-chart){height:auto!important;min-height:390px!important}
+.external-chart{height:390px!important;min-height:390px!important}
+.market-heading{padding:12px!important}.market-heading h2{font-size:clamp(23px,2.1vw,34px)!important}
+.trade-stack{display:flex!important;flex-direction:column!important;gap:9px!important;min-width:0!important}
+.trade-stack .trade-panel{padding:13px!important;border:1px solid #ff35bb!important;border-radius:12px!important}
+.trade-stack .trade-title{font-size:clamp(20px,1.7vw,29px)!important}
+.trade-stack .trade-panel label{margin:8px 0!important}
+.trade-stack .trade-panel .trade-metrics{padding:9px!important}
+.trade-stack .trade-panel .trade-metrics>div{padding:5px 0!important}
+.trade-stack .challenge-score{display:flex!important;flex-direction:column!important;gap:4px!important;min-height:0!important;padding:12px!important;border:1px solid #c5ff13!important;background:radial-gradient(circle at 90% 0%,#462153,#180e29 65%)!important}
+.trade-stack .challenge-score:before{content:'🏆';position:absolute;right:12px;top:7px;font-size:36px;opacity:.3}
+.trade-stack .challenge-score>*{grid-column:auto!important;grid-row:auto!important}
+.trade-stack .challenge-score .score-big{font-size:clamp(35px,3vw,55px)!important;line-height:1.05!important;margin:3px!important}
+.trade-stack .challenge-score .score-caption{font-size:12px!important}
+.trade-stack .challenge-score .challenge-actions{display:grid!important;grid-template-columns:1fr!important;gap:6px!important;width:100%!important;margin-top:7px!important}
+.trade-stack .challenge-score .challenge-actions button{min-height:40px!important;font-size:13px!important}
+.trade-stack .challenge-score .share-help{font-size:10px!important;line-height:1.3!important}
+.positions-panel{margin-top:9px!important}
+.market strong{font-size:16px!important}.market{padding:9px!important;min-height:65px!important}
+.v14-academy{margin:10px 0!important;padding:9px 12px!important}
+.v14-academy .academy-step{min-height:70px!important}
+.challenge-gallery{margin-top:10px!important}
+@media(min-width:1450px){.workspace{grid-template-columns:minmax(0,1.8fr) minmax(355px,.82fr)!important}.chart,.external-chart{height:430px!important;min-height:430px!important}}
+@media(max-width:1100px){.workspace{grid-template-columns:minmax(0,1fr) minmax(290px,.85fr)!important}.layout{grid-template-columns:215px minmax(0,1fr)!important}}
+@media(max-width:850px){.layout{grid-template-columns:1fr!important}.layout>aside{position:static!important;max-height:380px!important}.workspace{grid-template-columns:1fr!important}.chart,.external-chart{height:330px!important;min-height:330px!important}.v14-terminal-title span:last-child{display:none}}
+
+/* V15: annotated zones 1/2/3 — compact terminal layout */
+.v13-top-shell{display:grid!important;grid-template-columns:minmax(0,3fr) minmax(300px,1fr)!important;gap:9px!important;align-items:stretch!important;margin:6px 8px 7px!important;overflow:visible!important;border:0!important;background:transparent!important;box-shadow:none!important}
+.v15-top-left{min-width:0;display:flex;flex-direction:column;gap:5px;border:1px solid #743286;border-radius:12px;overflow:hidden;background:#1b0e29}
+.v15-top-left .event-bar{min-height:58px!important;padding:8px 12px!important;gap:8px!important}
+.v15-top-left .event-title{font-size:clamp(14px,1.35vw,21px)!important}
+.v15-top-left .event-link{display:none!important}
+.v15-top-left .event-clock{gap:4px!important;flex-shrink:0}
+.v15-top-left .event-clock span{min-width:40px!important;padding:5px!important}
+.v15-top-left .academy{display:flex!important;margin:0!important;padding:5px 9px!important;gap:8px!important;border:0!important;border-top:1px solid #63306d!important;background:transparent!important}
+.v15-top-left .academy>div:first-child{display:none!important}
+.v15-top-left .academy-steps{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:5px!important;flex:1!important}
+.v15-top-left .academy-step{min-height:54px!important;padding:7px!important;gap:2px!important}
+.v15-top-left .academy-step .step-top{font-size:9px!important}
+.v15-top-left .academy-step .step-top i{font-size:13px!important}
+.v15-top-left .academy-step strong{font-size:clamp(9px,.8vw,12px)!important;line-height:1.1!important}
+.v15-top-left .academy-step small{display:none!important}
+.v15-top-left .academy-link{display:none!important}
+.v15-top-left .safety-banner{margin:0!important;padding:5px 11px!important;border:0!important;border-top:1px solid #63306d!important;border-radius:0!important;font-size:10px!important}
+.v13-top-shell>.challenge-score{position:relative!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:3px!important;min-width:0!important;margin:0!important;padding:9px 12px!important;border:1px solid #c7ff16!important;border-radius:12px!important;background:radial-gradient(circle at 85% 5%,#50215a,#190d2b 70%)!important;text-align:center!important}
+.v13-top-shell>.challenge-score .score-big{font-size:clamp(34px,3vw,54px)!important;line-height:1!important;margin:2px 0!important}
+.v13-top-shell>.challenge-score .score-caption{font-size:10px!important}
+.v13-top-shell>.challenge-score .score-equity{font-size:12px!important}
+.v13-top-shell>.challenge-score .score-detail{font-size:10px!important;margin:1px 0!important}
+.v13-top-shell>.challenge-score .challenge-actions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:5px!important;width:100%!important;margin-top:4px!important}
+.v13-top-shell>.challenge-score .challenge-actions button{padding:8px 5px!important;min-height:33px!important;font-size:10px!important;line-height:1.2!important}
+.v13-top-shell>.challenge-score .share-help{font-size:9px!important;line-height:1.15!important}
+.v13-top-shell>.challenge-score .share-card-preview{display:none!important}
+.v15-market-stack{display:flex;flex-direction:column;gap:8px;min-width:0}
+.v15-market-stack .chart-panel{min-width:0}
+.v15-market-stack .positions-panel{margin:0!important;padding:10px!important;min-width:0;overflow:hidden}
+.v15-market-stack .section-head{margin-bottom:6px!important;gap:5px!important}
+.v15-market-stack .section-head h3{font-size:clamp(13px,1vw,17px)!important;line-height:1.2!important}
+.v15-market-stack .table-wrap{width:100%;overflow:auto;max-height:230px}
+.v15-market-stack table{width:100%;font-size:clamp(9px,.7vw,12px)!important}
+.v15-market-stack th,.v15-market-stack td{padding:7px 5px!important;white-space:nowrap}
+.v15-market-stack .history{max-height:180px;overflow-y:auto;font-size:11px!important}
+.workspace{grid-template-columns:minmax(0,1.75fr) minmax(310px,.8fr)!important}
+.trade-stack{align-self:start!important}
+@media(max-width:1150px){.v13-top-shell{grid-template-columns:minmax(0,1.8fr) minmax(280px,1fr)!important}.v15-top-left .academy-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}.workspace{grid-template-columns:minmax(0,1fr) minmax(300px,.8fr)!important}}
+@media(max-width:850px){.v13-top-shell{grid-template-columns:1fr!important}.v15-top-left .academy-steps{grid-template-columns:repeat(4,minmax(0,1fr))!important}.v13-top-shell>.challenge-score{min-height:165px!important}}
+@media(max-width:560px){.v15-top-left .academy-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}.v13-top-shell>.challenge-score .challenge-actions{grid-template-columns:1fr!important}.v15-top-left .event-bar{flex-wrap:wrap!important}}
+
+/* V16 — compact neon arcade terminal */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Rajdhani:wght@600;700&display=swap');
+body{font-family:'Rajdhani',system-ui,sans-serif!important;font-size:15px!important;background:#090714!important}
+button,input,h1,h2,h3,.event-title,.academy-step,.market-heading,.trade-title{font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif!important;letter-spacing:.35px}
+header{margin:0!important;padding:8px 16px!important;min-height:58px!important}
+.v16-hero{height:132px;display:flex;align-items:center;position:relative;overflow:hidden;margin:5px 8px;border:1px solid #ff2cc7;border-radius:13px;background:radial-gradient(ellipse at 70% 50%,#442064 0%,#170a2b 45%,#080713 100%);box-shadow:inset 0 0 30px #e82aff24,0 0 16px #ff2cc72a}
+.v16-hero:before{content:'✦ ✨  ₊˚  ✦  ₊˚  ✨';position:absolute;inset:5px auto auto 25%;font-size:27px;color:#ff49e2;letter-spacing:28px;opacity:.75}
+.v16-hero:after{content:'🚀  🪙  ⚡  🏆';position:absolute;right:2%;bottom:5px;font-size:24px;filter:drop-shadow(0 0 9px #ff2cf7)}
+.v16-hero-figure{position:absolute;left:1%;height:170px;width:240px;object-fit:contain;object-position:center;filter:drop-shadow(0 0 13px #00eaff)}
+.v16-hero-trophy{position:absolute;right:0;height:140px;width:190px;object-fit:cover;object-position:center;opacity:.88;mask-image:radial-gradient(ellipse,#000 30%,transparent 78%)}
+.v16-hero-copy{z-index:1;margin-left:clamp(195px,21vw,330px);text-shadow:0 2px 14px #000;max-width:calc(100% - 390px)}
+.v16-hero-kicker{font-weight:900;color:#ff5cda;letter-spacing:2px;font-size:13px}
+.v16-hero h1{font-family:'Barlow Condensed',sans-serif;font-style:italic;font-weight:900;font-size:clamp(32px,4vw,65px);line-height:.98;margin:4px 0;color:white}
+.v16-hero h1 span{color:#baff00;text-shadow:0 0 20px #baff0077}
+.v16-hero p{font-size:clamp(11px,1.05vw,16px);font-weight:800;color:#e8d5ff;margin:4px 0}
+.event-bar{margin:4px 8px 5px!important;padding:7px 16px!important;min-height:72px!important;background:linear-gradient(100deg,#3b1249,#180c2a 70%)!important;border:1px solid #ff3ac3!important;border-radius:12px!important}
+.event-title{font-size:clamp(24px,2.25vw,38px)!important;line-height:1!important}
+.event-kicker{font-size:12px!important;letter-spacing:1.5px!important}
+.event-clock{gap:8px!important}.event-clock span{min-width:62px!important;padding:6px 9px!important;font-size:26px!important;color:#baff00!important}.event-clock small{font-size:10px!important}
+.event-link{display:inline-flex!important}
+.v13-top-shell{grid-template-columns:minmax(0,1fr) minmax(330px,32%)!important;align-items:stretch!important;margin:0 8px 5px!important}
+.v15-top-left{justify-content:center!important;min-height:148px!important;background:linear-gradient(115deg,#251139,#100b20)!important}
+.v15-top-left .academy{padding:10px!important;flex:1;align-items:center!important}
+.v15-top-left .academy-steps{gap:9px!important}
+.v15-top-left .academy-step{min-height:100px!important;padding:12px!important;border-radius:11px!important;background:linear-gradient(145deg,#301342,#1b0e2c)!important}
+.v15-top-left .academy-step .step-top{font-size:13px!important;color:#ff60cf!important}
+.v15-top-left .academy-step .step-top i{font-size:23px!important}
+.v15-top-left .academy-step strong{font-size:clamp(17px,1.45vw,25px)!important;color:#fff!important;line-height:1.1!important}
+.v15-top-left .academy-step small{display:block!important;font-size:12px!important;color:#d5b5ee!important}
+.v13-top-shell>.challenge-score{min-height:150px!important;padding:8px 14px 8px 90px!important;overflow:hidden!important}
+.v16-score-mascot{position:absolute;left:-24px;bottom:-14px;width:128px;height:140px;object-fit:contain;filter:drop-shadow(0 0 10px #f9c500);pointer-events:none}
+.v13-top-shell>.challenge-score .score-big{font-size:clamp(43px,3.6vw,69px)!important}
+.v13-top-shell>.challenge-score .score-caption{font-size:13px!important}
+.v13-top-shell>.challenge-score .challenge-actions button{font-size:clamp(12px,.95vw,16px)!important;min-height:39px!important}
+.v13-top-shell>.challenge-score .share-help{font-size:11px!important}
+.v14-terminal-title{margin:4px 8px 5px!important;font-size:17px!important}
+.safety-banner{font-size:11px!important;margin:0 8px 4px!important}
+.market strong{font-size:19px!important}.market-heading h2{font-size:clamp(28px,2.5vw,42px)!important}
+.trade-title{font-size:clamp(26px,2.3vw,38px)!important}.trade-panel button{font-size:18px!important}
+.positions-panel h3{font-size:clamp(18px,1.45vw,26px)!important}
+.v15-market-stack .table-wrap{max-height:300px!important}.v15-market-stack .history{max-height:220px!important}
+@media(max-width:1100px){.v16-hero-figure{width:180px}.v16-hero-copy{margin-left:185px;max-width:calc(100% - 260px)}.v13-top-shell{grid-template-columns:1fr!important}.v13-top-shell>.challenge-score{padding-left:130px!important}}
+@media(max-width:700px){.v16-hero{height:110px}.v16-hero-figure{width:105px;height:115px}.v16-hero-trophy{display:none}.v16-hero-copy{margin-left:110px;max-width:calc(100% - 115px)}.v16-hero h1{font-size:34px}.v16-hero p{font-size:10px}.event-bar{flex-wrap:wrap!important}.event-title{font-size:26px!important}.event-clock span{min-width:48px!important;font-size:20px!important}.v15-top-left .academy-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}.v15-top-left .academy-step{min-height:80px!important}.v13-top-shell>.challenge-score{padding-left:90px!important}.v16-score-mascot{width:100px}.event-link{display:none!important}}
+
+/* V17 — full-width arcade, larger controls, functional art assets */
+.v16-hero{height:190px!important;margin:6px 10px!important;background:linear-gradient(90deg,#130824dd,#18072cbb),url('/arcade-world-v13.png') center 49%/cover!important;border:2px solid #fc36c6!important}
+.v16-hero-figure{width:250px!important;height:195px!important;left:10px!important;object-fit:contain!important}
+.v16-hero-trophy{width:230px!important;height:185px!important;right:6px!important;object-fit:contain!important;mask-image:none!important}
+.v16-hero-copy{margin-left:clamp(215px,22vw,355px)!important;max-width:calc(100% - 570px)!important}
+.v16-hero h1{font-size:clamp(42px,4.4vw,76px)!important}
+.v16-hero p{font-size:clamp(14px,1.3vw,20px)!important}
+.event-bar{display:flex!important;justify-content:center!important;align-items:center!important;gap:clamp(22px,5vw,110px)!important;min-height:94px!important;padding:12px 20px!important;background:linear-gradient(90deg,#220a34,#451344,#1a0b2b)!important}
+.event-title{font-size:clamp(26px,2.5vw,46px)!important}.event-kicker{font-size:15px!important}
+.event-clock{display:flex!important;justify-content:center!important;gap:10px!important}.event-clock span{font-size:clamp(32px,3vw,54px)!important;min-width:75px!important;background:#10091e!important;border:1px solid #c53bef!important;border-radius:9px!important;text-align:center!important}.event-clock small{font-size:12px!important}
+.v13-top-shell{display:block!important;margin:5px 10px 9px!important}
+.v15-top-left{min-height:0!important;width:100%!important;background:#180a2b!important;border:1px solid #af36ed!important;border-radius:12px!important}
+.v15-top-left .academy{display:block!important;padding:9px!important}
+.v15-top-left .academy>div:first-child{display:none!important}
+.v15-top-left .academy-steps{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important;width:100%!important}
+.v15-top-left .academy-step{position:relative!important;min-height:165px!important;padding:16px 15px!important;display:flex!important;flex-direction:column!important;justify-content:flex-end!important;overflow:hidden!important;background:linear-gradient(0deg,#160923 0%,#180a29cf 45%,#180a2911 100%),url('/paperx-v12-hero.png') center 30%/cover!important;border:2px solid #c03dff!important;box-shadow:inset 0 0 30px #10031b!important}
+.v15-top-left .v17-level-2{background-image:linear-gradient(0deg,#160923 0%,#180a29c4 45%,#180a2911 100%),url('/paperx-v12-gamer.png')!important}
+.v15-top-left .v17-level-3{background-image:linear-gradient(0deg,#160923 0%,#180a29c4 45%,#180a2911 100%),url('/paperx-v12-robot.png')!important}
+.v15-top-left .v17-level-4{background-image:linear-gradient(0deg,#160923 0%,#180a29c4 45%,#180a2911 100%),url('/arcade-victory-v13.png')!important}
+.v15-top-left .academy-step .step-top{font-size:17px!important;text-shadow:0 2px 7px #000!important}.v15-top-left .academy-step .step-top i{font-size:26px!important}
+.v15-top-left .academy-step strong{font-size:clamp(22px,1.9vw,36px)!important;text-shadow:0 3px 9px #000!important}
+.v15-top-left .academy-step small{display:block!important;font-size:15px!important;color:#f1dfff!important;text-shadow:0 2px 6px #000!important}
+.v15-top-left .academy-step:hover{transform:translateY(-3px);border-color:#baff00!important}
+.safety-banner{font-size:12px!important;padding:5px 14px!important}
+.workspace{grid-template-columns:minmax(0,1.8fr) minmax(345px,.9fr)!important;gap:10px!important}
+.trade-stack{display:flex!important;flex-direction:column!important;gap:10px!important;align-self:stretch!important;min-width:0!important}
+.trade-stack .trade-panel{min-height:630px!important;padding:18px!important;background:linear-gradient(150deg,#2b0e37,#110b21)!important;border:2px solid #ff37bc!important}
+.trade-stack .trade-title{font-size:clamp(32px,2.6vw,48px)!important}.trade-stack .trade-kicker{font-size:16px!important}
+.trade-stack .trade-panel label{font-size:17px!important}.trade-stack .trade-panel input[type=number]{font-size:23px!important;min-height:52px!important}
+.trade-stack .tabs button{min-height:54px!important;font-size:23px!important}.trade-stack #open{min-height:62px!important;font-size:24px!important}
+.trade-stack .trade-metrics{font-size:16px!important;padding:15px!important}
+.trade-stack>.challenge-score{position:relative!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:6px!important;min-height:270px!important;margin:0!important;padding:18px 20px 16px 105px!important;overflow:hidden!important;border:2px solid #baff00!important;border-radius:13px!important;background:radial-gradient(circle at 80% 0%,#56215b,#170a29 75%)!important;text-align:center!important}
+.trade-stack>.challenge-score .v16-score-mascot{position:absolute;left:-18px;bottom:0;width:145px;height:180px;object-fit:contain;pointer-events:none}
+.trade-stack>.challenge-score .score-caption{font-size:17px!important}.trade-stack>.challenge-score .score-big{font-size:clamp(55px,4vw,85px)!important;line-height:1!important}
+.trade-stack>.challenge-score .score-equity{font-size:20px!important;font-weight:800!important}.trade-stack>.challenge-score .score-detail{font-size:14px!important}
+.trade-stack>.challenge-score .challenge-actions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important;width:100%!important}
+.trade-stack>.challenge-score .challenge-actions button{font-size:17px!important;min-height:46px!important;padding:8px!important}
+.trade-stack>.challenge-score .share-help{font-size:12px!important}
+.v17-side-art{position:relative;min-height:160px;overflow:hidden;border:2px solid #ff3bd1;border-radius:12px;background:#1b092c}
+.v17-side-art img{width:100%;height:175px;object-fit:cover;object-position:center 40%}.v17-side-art span{position:absolute;bottom:0;left:0;right:0;background:#14071ad9;text-align:center;color:#baff00;font-weight:900;font-size:22px;padding:5px}
+.v15-market-stack .positions-panel{padding:13px!important}.v15-market-stack .section-head h3{font-size:clamp(20px,1.5vw,28px)!important}
+.v15-market-stack .table-wrap{max-height:280px!important}.v15-market-stack .history{max-height:250px!important;font-size:14px!important}
+.community{min-height:250px!important}.community-visual{min-height:235px!important}.community-visual img{width:100%!important;height:100%!important;min-height:235px!important;object-fit:cover!important}
+@media(max-width:1150px){.workspace{grid-template-columns:minmax(0,1fr) minmax(300px,.8fr)!important}.v16-hero-copy{max-width:calc(100% - 400px)!important}}
+@media(max-width:850px){.v15-top-left .academy-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}.workspace{grid-template-columns:1fr!important}.v16-hero-trophy{display:none!important}.v16-hero-copy{max-width:calc(100% - 235px)!important}.event-bar{flex-wrap:wrap!important;gap:10px!important}.event-clock span{font-size:30px!important}}
+@media(max-width:550px){.v16-hero{height:135px!important}.v16-hero-figure{width:120px!important;height:130px!important}.v16-hero-copy{margin-left:125px!important;max-width:calc(100% - 130px)!important}.v16-hero h1{font-size:35px!important}.v16-hero p{font-size:10px!important}.v15-top-left .academy-step{min-height:135px!important;padding:8px!important}.v15-top-left .academy-step strong{font-size:21px!important}.event-clock span{min-width:55px!important;font-size:26px!important}.trade-stack>.challenge-score{padding-left:70px!important}.trade-stack>.challenge-score .v16-score-mascot{width:85px!important}.trade-stack>.challenge-score .challenge-actions{grid-template-columns:1fr!important}}
+
+/* V18 — readability, visual hierarchy and unified arcade victory artwork */
+.layout aside{font-size:16px!important}
+.layout aside .aside-head{padding:15px 12px!important;gap:8px!important}
+.layout aside .aside-head h3{font-size:clamp(20px,1.35vw,26px)!important;color:#ffffff!important;letter-spacing:.2px!important}
+.layout aside #market-count{font-size:15px!important;color:#c6ff16!important;font-weight:900!important}
+.layout aside #search{font-size:17px!important;min-height:48px!important;color:#fff!important;border:2px solid #9148b9!important}
+.layout aside #search::placeholder{color:#e0c7ec!important;opacity:1!important}
+.layout aside .market-filters button{font-size:14px!important;min-height:40px!important;font-weight:900!important}
+.layout aside #search-hint,.layout aside .aside-foot{font-size:13px!important;line-height:1.5!important;color:#d7c9e8!important}
+.layout aside .markets{font-size:16px!important}
+.layout aside .market{min-height:72px!important;padding:10px!important}
+.layout aside .market strong{font-size:21px!important;color:#fff!important}
+.layout aside .market small,.layout aside .market .muted{font-size:13px!important;color:#cbbbe1!important}
+.layout aside .market .change{font-size:15px!important;font-weight:900!important}
+.trade-stack .trade-metrics{border:2px solid #7f4fa7!important;background:#20102f!important;padding:18px!important;gap:12px!important}
+.trade-stack .trade-metrics>div{min-height:31px!important;gap:12px!important}
+.trade-stack .trade-metrics span{font-size:16px!important;color:#e5d7f2!important;font-weight:750!important}
+.trade-stack .trade-metrics b{font-size:17px!important;color:#fff!important;font-weight:900!important}
+.v15-market-stack .positions-panel h3{font-size:clamp(24px,1.85vw,33px)!important;color:#d5ff29!important}
+.v15-market-stack .positions-panel:last-child h3{color:#ff6bd4!important}
+.v15-market-stack .positions-panel .section-head .muted{font-size:13px!important;color:#dfccec!important}
+.v15-market-stack table{font-size:15px!important;color:#fff!important}
+.v15-market-stack table th{font-size:14px!important;color:#dfd2eb!important;font-weight:900!important}
+.v15-market-stack table td{font-size:15px!important;line-height:1.45!important}
+.v15-market-stack .history{font-size:16px!important;color:#f8f1ff!important}
+.v15-market-stack .history>*{font-size:15px!important;min-height:51px!important}
+.trade-stack>.challenge-score{padding:18px 18px 15px!important;gap:10px!important;text-align:center!important}
+.trade-stack>.challenge-score .score-caption{font-size:20px!important;color:#fff!important}
+.trade-stack>.challenge-score .score-equity{font-size:22px!important;color:#fff!important}
+.trade-stack>.challenge-score .score-detail{font-size:16px!important;color:#e7d9f5!important}
+.trade-stack>.challenge-score .challenge-actions{display:flex!important;justify-content:center!important;align-items:stretch!important;gap:12px!important;max-width:620px!important;margin:6px auto 0!important}
+.trade-stack>.challenge-score .challenge-actions button{flex:1!important;min-width:0!important;min-height:64px!important;font-size:clamp(15px,1.2vw,20px)!important;font-weight:1000!important;padding:12px 16px!important;line-height:1.2!important}
+.trade-stack>.challenge-score .share-help{font-size:14px!important;color:#e9d9f6!important;text-align:center!important;max-width:540px!important;line-height:1.45!important}
+.trade-stack>.challenge-score .v16-score-mascot,.trade-stack>.challenge-score .v13-score-art{display:none!important}
+.v18-score-art{position:relative!important;display:block!important;width:100%!important;max-width:660px!important;margin:10px auto 0!important;overflow:hidden!important;border:2px solid #e946e8!important;border-radius:16px!important;box-shadow:0 0 22px #ff36d044!important;background:#120822!important}
+.v18-score-art img{display:block!important;width:100%!important;height:auto!important;aspect-ratio:2.65/1!important;object-fit:cover!important}
+.v18-score-art span{display:block!important;padding:10px 12px!important;background:#160a29!important;color:#cbff1b!important;font-size:18px!important;font-weight:1000!important;text-align:center!important;letter-spacing:1px!important}
+.community-content{padding:24px!important}
+.community-content .eyebrow{font-size:15px!important;color:#ff70d5!important;font-weight:900!important}
+.community-content h2{font-size:clamp(27px,2.15vw,39px)!important;line-height:1.15!important;color:#fff!important}
+.community-content p{font-size:17px!important;line-height:1.55!important;color:#f1e6fa!important}
+.community-content .token-label{font-size:15px!important;color:#ff79d6!important;font-weight:900!important}
+.community-content .token-address{font-size:14px!important;color:#c7ff21!important;overflow-wrap:anywhere!important}
+.community-content .community-actions a,.community-content .copy-token{font-size:15px!important;min-height:45px!important;padding:12px 16px!important;font-weight:900!important}
+.community-content .community-disclaimer{font-size:13px!important;color:#d8c6e8!important}
+@media(max-width:950px){.trade-stack>.challenge-score .challenge-actions{flex-direction:column!important}.trade-stack>.challenge-score .challenge-actions button{width:100%!important}}
+
+/* V19 arcade UX polish */
+html{scroll-behavior:smooth}#trading-terminal{scroll-margin-top:12px}
+.aside-head h3{display:flex!important;align-items:center;gap:12px;font-size:clamp(18px,1.3vw,23px)!important;line-height:1.13!important}
+.fighter-mascot{width:58px;height:58px;flex:0 0 58px;object-fit:cover;object-position:center 40%;border:2px solid #ff35c8;border-radius:13px;background:#1d0c35;box-shadow:0 0 15px #ff35c855}
+#search{font-size:18px!important;font-weight:850!important;min-height:54px!important;color:#fff!important;background:#200c32!important;border:2px solid #b45cf4!important}
+#search::placeholder{color:#f4d8ff!important;opacity:1!important;font-weight:800!important}
+#leverage{height:18px!important;accent-color:#c3ff00!important;cursor:pointer!important;background:linear-gradient(90deg,#b7ff00,#f735c5)!important;border-radius:15px!important}
+#leverage::-webkit-slider-thumb{appearance:none!important;width:29px!important;height:29px!important;border-radius:50%!important;background:#c3ff00!important;border:4px solid #fff!important;box-shadow:0 0 14px #b7ff00!important}
+#leverage::-moz-range-thumb{width:25px!important;height:25px!important;border-radius:50%!important;background:#c3ff00!important;border:4px solid #fff!important;box-shadow:0 0 14px #b7ff00!important}
+#margin{color:#c3ff00!important;font-size:clamp(22px,1.8vw,30px)!important;font-weight:1000!important;text-shadow:0 0 15px #b7ff0060!important;border:2px solid #f638d1!important;background:#1d0b2f!important}
+.v17-level-4{display:flex!important;flex-direction:column!important;justify-content:center!important;gap:5px!important}
+.level-four-score{color:#b7ff00;font-size:clamp(23px,2vw,37px);line-height:1;font-weight:1000;text-shadow:0 0 18px #b7ff0090}
+.level-four-score.negative{color:#ff4ab5;text-shadow:0 0 18px #ff4ab570}
+.level-four-actions{display:flex;gap:7px;flex-wrap:wrap;position:relative;z-index:2}
+.level-four-actions button{flex:1 1 90px;cursor:pointer;border:2px solid #c3ff00;border-radius:9px;padding:8px 7px;font-size:12px;font-weight:1000;background:#c3ff00;color:#160924;white-space:nowrap}
+.level-four-actions button+button{background:#240b39;color:#fff;border-color:#ff35c8}
+.level-four-actions button:hover{filter:brightness(1.2);transform:translateY(-1px)}
+.event-link{font-size:15px!important;font-weight:1000!important;background:#b7ff00!important;color:#150923!important;padding:14px 20px!important;box-shadow:0 0 17px #b7ff0070!important}
+@media(max-width:650px){.fighter-mascot{width:46px;height:46px;flex-basis:46px}.level-four-actions button{font-size:10px}.level-four-score{font-size:25px}}
+
+/* V21 — full arcade hero: purpose-built readable artwork, no miniature banners */
+.v21-hero{height:255px!important;min-height:255px!important;display:grid!important;grid-template-columns:minmax(175px,22%) minmax(0,1fr) minmax(155px,19%)!important;gap:14px!important;align-items:center!important;padding:12px 22px!important;background:linear-gradient(90deg,#0b0623ed,#16072ccf,#0b0623ee),url('/arcade-world-v13.png') center/cover!important;border:2px solid #ef36e4!important;box-shadow:0 0 26px #f128dc3d,inset 0 0 35px #8621c23b!important;isolation:isolate}
+.v21-hero:before{content:'';position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0px,transparent 7px,#ffffff05 8px);z-index:-1}
+.v21-hero-character,.v21-hero-trophy{height:100%;min-width:0;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;border:2px solid #ae48ef;border-radius:14px;background:radial-gradient(circle at 50% 60%,#62248c99,#150923 75%);box-shadow:inset 0 0 25px #dc39ef2e,0 0 16px #a832d633}
+.v21-hero-character img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 14px #00eaff99)}
+.v21-hero-character span{position:absolute;bottom:7px;left:8px;right:8px;text-align:center;background:#130923e8;border:1px solid #aaff00;border-radius:6px;color:#baff00;font-size:clamp(12px,1vw,17px);font-weight:1000;padding:6px 3px;letter-spacing:1px}
+.v21-hero-copy{position:relative;z-index:2;min-width:0;max-width:none!important;margin:0!important;text-align:center;text-shadow:0 3px 10px #000}
+.v21-hero-kicker{font-size:clamp(13px,1.12vw,19px);color:#ff67d8;font-weight:1000;letter-spacing:1.4px;margin-bottom:7px}
+.v21-hero h1{font-size:clamp(35px,4.2vw,76px)!important;line-height:1.04!important;letter-spacing:-1.5px!important;color:#fff!important;margin:0!important;font-style:italic;font-weight:1000;white-space:normal!important}
+.v21-hero h1 .v21-flush{color:#fff!important}.v21-hero h1 .v21-moon{color:#baff00!important;text-shadow:0 0 23px #baff0088!important}
+.v21-hero p{font-size:clamp(12px,1.12vw,19px)!important;font-weight:950!important;color:#fff!important;margin:12px 0!important;line-height:1.4!important}.v21-hero p b{color:#ff48c6}
+.v21-hero-steps{display:flex;justify-content:center;gap:9px;flex-wrap:wrap}.v21-hero-steps a{min-width:110px;text-align:center;text-decoration:none!important;border:2px solid #a83bea;border-radius:9px;background:#1e0a35e8;color:#f7f1ff!important;padding:9px 13px;font-size:clamp(13px,1vw,17px);font-weight:1000;box-shadow:0 0 14px #bf2be73d;transition:transform .15s,border-color .15s}.v21-hero-steps a:hover{transform:translateY(-3px);border-color:#baff00}
+.v21-hero-trophy{border-color:#d6fa1b;background:radial-gradient(circle,#5c2a81,#160824 80%)}
+.v21-hero-trophy img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 12px #ffcf30)}
+.v21-hero-trophy span{position:absolute;bottom:7px;left:5px;right:5px;text-align:center;color:#baff00;background:#12091eea;border:1px solid #baff00;border-radius:7px;font-size:clamp(12px,1vw,17px);font-weight:1000;line-height:1.2;padding:5px}
+@media(max-width:1000px){.v21-hero{grid-template-columns:145px minmax(0,1fr) 125px!important;padding:10px!important;gap:8px!important}.v21-hero h1{font-size:clamp(30px,4vw,50px)!important}.v21-hero-steps a{min-width:0;padding:7px 9px}}
+@media(max-width:680px){.v21-hero{height:auto!important;min-height:210px!important;grid-template-columns:85px minmax(0,1fr)!important;gap:7px!important;padding:8px!important}.v21-hero-character{height:170px}.v21-hero-trophy{display:none!important}.v21-hero h1{font-size:clamp(26px,6vw,42px)!important;letter-spacing:-.5px!important}.v21-hero-kicker{font-size:10px}.v21-hero p{font-size:11px!important}.v21-hero-steps a{font-size:11px;padding:6px}.v21-hero-character span{font-size:9px;letter-spacing:0}}
+@media(prefers-reduced-motion:no-preference){.v21-hero-character img{animation:v21float 4s ease-in-out infinite}@keyframes v21float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}}
+
+/* V22 — three focused interface upgrades */
+.layout aside .aside-head h3:before{content:none!important;display:none!important}
+.v22-fighter-emblem{width:62px;height:62px;flex:0 0 62px;display:grid;place-items:center;overflow:hidden;border:2px solid #c5ff00;border-radius:16px;background:radial-gradient(circle at 50% 30%,#46347b,#130a28 72%);box-shadow:0 0 15px #b7ff0077,inset 0 0 12px #b7ff0033}
+.v22-fighter-emblem .fighter-mascot{width:54px!important;height:58px!important;flex:none!important;border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important;object-fit:contain!important;object-position:center!important;filter:drop-shadow(0 0 7px #00e9ff)}
+.layout aside .aside-head h3{gap:10px!important}
+.v22-pair-title{display:flex;align-items:center;flex-wrap:wrap;gap:10px 22px;margin-bottom:7px}
+.v22-pair-title h2{margin:0!important;line-height:1.1}
+.v22-pair-performance{display:inline-flex;align-items:center;justify-content:center;min-width:105px;padding:7px 13px;border-radius:10px;border:1px solid currentColor;font-size:clamp(19px,1.8vw,29px)!important;font-weight:1000!important;line-height:1!important;letter-spacing:.3px;text-shadow:0 0 13px currentColor;background:#160f26}
+.v22-pair-performance.positive{color:#b7ff00!important;box-shadow:0 0 14px #b7ff0030}
+.v22-pair-performance.negative{color:#ff48b8!important;box-shadow:0 0 14px #ff48b830}
+.market-heading{gap:12px}
+.market-heading>.price{flex-shrink:0}
+#degen-level.degen-level{min-height:54px!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:10px!important;font-size:clamp(17px,1.4vw,23px)!important;line-height:1.2!important;font-weight:1000!important;letter-spacing:.8px!important;border-width:2px!important;text-shadow:0 0 12px currentColor;box-shadow:inset 0 0 15px #b7ff0020,0 0 13px #b7ff0035}
+#degen-level.degen-level.danger{box-shadow:inset 0 0 15px #ff35a820,0 0 13px #ff35a835}
+@media(max-width:760px){.v22-pair-title{gap:8px}.v22-pair-performance{font-size:20px!important;padding:6px 9px}.v22-fighter-emblem{width:52px;height:52px;flex-basis:52px}.v22-fighter-emblem .fighter-mascot{width:45px!important;height:49px!important}.market-heading{align-items:flex-start}}
+
+/* V23 – large, legible 24-hour performance beside the selected market */
+.v22-pair-title{display:flex!important;align-items:center!important;gap:18px!important;flex-wrap:wrap!important}
+.v22-pair-performance,#change{font-size:clamp(24px,2.25vw,39px)!important;line-height:1.05!important;font-weight:1000!important;letter-spacing:-.8px!important;text-shadow:0 0 16px currentColor!important;padding:5px 12px!important;border:2px solid currentColor!important;border-radius:12px!important;white-space:nowrap!important}
+.v22-pair-performance.positive,#change.positive{color:#baff00!important;background:#baff0012!important}
+.v22-pair-performance.negative,#change.negative{color:#ff43b9!important;background:#ff43b912!important}
+.sound-toggle{min-width:115px!important;font-weight:900!important;border-color:#9b51c6!important;color:#e8d1ff!important}
+.sound-toggle[aria-pressed="true"]{border-color:#baff00!important;color:#baff00!important;box-shadow:0 0 13px #baff0033!important}
+@keyframes arcadeTap{0%{transform:scale(1);filter:brightness(1)}35%{transform:scale(.94);filter:brightness(1.9) drop-shadow(0 0 12px #ff3ecb)}70%{transform:scale(1.04);filter:brightness(1.4)}100%{transform:scale(1);filter:brightness(1)}}
+@keyframes arcadeSlider{0%{filter:drop-shadow(0 0 0 #baff00)}50%{filter:drop-shadow(0 0 12px #baff00)}100%{filter:drop-shadow(0 0 0 #baff00)}}
+.arcade-pressed{animation:arcadeTap .3s ease-out!important}
+.arcade-slider-pulse{animation:arcadeSlider .25s ease-out!important}
+button,a{transition:filter .16s,box-shadow .16s,transform .16s}
+button:not(:disabled):hover{filter:brightness(1.16)}
+@media(prefers-reduced-motion:reduce){.arcade-pressed,.arcade-slider-pulse{animation:none!important}}
+@media(max-width:720px){.v22-pair-performance,#change{font-size:24px!important}.sound-toggle{min-width:auto!important}}
+
+/* V24: expanded trading chart, preserving the original trading controls. */
+.chart{height:590px!important;min-height:590px!important;}
+.chart:has(.external-chart){height:590px!important;min-height:590px!important;}
+.external-chart{height:545px!important;min-height:545px!important;}
+@media(min-width:1450px){.chart,.chart:has(.external-chart){height:650px!important;min-height:650px!important}.external-chart{height:605px!important;min-height:605px!important}}
+@media(max-width:850px){.chart,.chart:has(.external-chart){height:470px!important;min-height:470px!important}.external-chart{height:425px!important;min-height:425px!important}}
+@media(max-width:500px){.chart,.chart:has(.external-chart){height:390px!important;min-height:390px!important}.external-chart{height:345px!important;min-height:345px!important}}
+
+/* V26 hero illustrations are clickable shortcuts */
+.v26-hero-jump{cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.v26-hero-jump:hover{transform:translateY(-3px);box-shadow:0 0 24px #bdff00a0,inset 0 0 25px #dc39ef40}
+.v26-hero-jump:focus-visible{outline:3px solid #baff00;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.v26-hero-jump{transition:none}}
+
+/* V27 — community CTA, title hierarchy and successful trade flash */
+.v21-hero-steps .tg-army{border-color:#29cfff!important;background:linear-gradient(110deg,#122846,#301346)!important;color:#f6ffff!important;box-shadow:0 0 17px #00c8ff44!important;white-space:nowrap;letter-spacing:.25px}
+.v21-hero-steps .tg-army:hover{border-color:#baff00!important;box-shadow:0 0 20px #baff0066!important}
+.aside-head h3{font-weight:1000!important;font-style:italic!important;letter-spacing:.2px!important;text-shadow:0 2px 10px #fc3cce44}
+@keyframes paperxTradeBurst{0%{box-shadow:0 0 0 #baff0000;filter:brightness(1)}25%{box-shadow:0 0 40px 13px #baff00a0;filter:brightness(1.6)}65%{box-shadow:0 0 25px 7px #e83ff6a0;filter:brightness(1.25)}100%{box-shadow:0 0 0 #baff0000;filter:brightness(1)}}
+.paperx-trade-burst{animation:paperxTradeBurst .8s ease-out!important}
+@media(max-width:1100px){.v21-hero-steps .tg-army{flex-basis:100%;max-width:260px;margin:auto}}
+@media(prefers-reduced-motion:reduce){.paperx-trade-burst{animation:none!important}}
+
+/* V28 — arcade neon signage and high-impact Level 04 P&L */
+.trade-panel .trade-title{position:relative;display:block!important;margin:13px 0 22px!important;padding:20px 54px 20px 15px!important;border:2px solid #ff40d6!important;border-radius:15px!important;background:linear-gradient(120deg,#260a38 0%,#430a42 48%,#170821 100%)!important;color:#fff8ff!important;font-weight:1000!important;font-style:italic!important;letter-spacing:-.8px!important;line-height:1.12!important;text-align:center!important;text-shadow:0 0 5px #fff,0 0 13px #ff37c6,0 0 27px #ff00b8!important;box-shadow:0 0 8px #ff36cf,0 0 22px #ff36cf88,inset 0 0 22px #ff36cf55!important;animation:v28NeonSign 3.6s ease-in-out infinite}
+.trade-panel .trade-title .pill.demo{position:absolute!important;right:10px!important;top:50%!important;transform:translateY(-50%)!important;white-space:nowrap!important;text-shadow:none!important}
+@keyframes v28NeonSign{0%,100%{box-shadow:0 0 8px #ff36cf,0 0 22px #ff36cf88,inset 0 0 22px #ff36cf55;text-shadow:0 0 5px #fff,0 0 13px #ff37c6,0 0 27px #ff00b8}50%{box-shadow:0 0 12px #ff36cf,0 0 34px #ff36cfc0,inset 0 0 30px #ff36cf70;text-shadow:0 0 8px #fff,0 0 20px #ff37c6,0 0 36px #ff00b8}}
+.v17-level-4,.academy-step.v17-level-4{border-color:#ff4dca!important;box-shadow:inset 0 0 18px #ff30bf22,0 0 15px #ff30bf33!important}
+.v17-level-4 strong{font-size:clamp(19px,1.65vw,29px)!important;line-height:1.05!important;letter-spacing:-.5px!important;color:#fff!important;text-shadow:0 0 12px #ff4ccc!important;display:block!important;max-width:100%!important}
+.v17-level-4 .level-four-score{display:block!important;width:max-content!important;max-width:100%!important;margin:8px 0!important;padding:3px 12px!important;border:2px solid currentColor!important;border-radius:12px!important;font-size:clamp(25px,2.25vw,42px)!important;font-weight:1000!important;line-height:1.12!important;text-shadow:0 0 9px currentColor,0 0 23px currentColor!important;box-shadow:0 0 16px currentColor,inset 0 0 11px #ffffff16!important;animation:v28PnlGlow 2.4s ease-in-out infinite}
+@keyframes v28PnlGlow{0%,100%{filter:brightness(1)}50%{filter:brightness(1.3)}}
+.v17-level-4 .level-four-actions{position:relative!important;z-index:2!important}
+@media(max-width:1100px){.trade-panel .trade-title{padding:17px 50px 17px 10px!important}.v17-level-4 strong{font-size:20px!important}.v17-level-4 .level-four-score{font-size:27px!important}}
+@media(prefers-reduced-motion:reduce){.trade-panel .trade-title,.v17-level-4 .level-four-score{animation:none!important}}
+
+
+/* V29 — rotating neon runner on the two arcade signs */
+@property --v29-angle {syntax: "<angle>"; initial-value: 0deg; inherits: false;}
+@keyframes v29Runner {to {--v29-angle: 360deg;}}
+/* A rotating conic-gradient is clipped to the border only, preserving readability. */
+.layout aside .aside-head h3,
+.trade-panel .trade-title {isolation:isolate;position:relative!important;}
+.layout aside .aside-head h3::after,
+.trade-panel .trade-title::after {
+ content:"";position:absolute;inset:-3px;border:3px solid transparent;border-radius:inherit;
+ background:conic-gradient(from var(--v29-angle),transparent 0deg,transparent 245deg,currentColor 289deg,#fff 302deg,currentColor 317deg,transparent 348deg) border-box;
+ -webkit-mask:linear-gradient(#000 0 0) padding-box,linear-gradient(#000 0 0);
+ -webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;
+ animation:v29Runner 3.2s linear infinite;filter:drop-shadow(0 0 6px currentColor);z-index:2;
+}
+/* Green arcade sign, with mascot left and market count remaining readable. */
+.layout aside .aside-head h3 {
+ color:#c5ff00!important; border:2px solid #baff00!important;border-radius:12px!important;
+ padding:13px 10px!important;margin:0!important;min-width:0;flex:1;
+ background:linear-gradient(120deg,#14220b,#101221 75%)!important;
+ text-shadow:0 0 5px #baff00,0 0 17px #aaff00!important;
+ box-shadow:0 0 11px #baff0080,inset 0 0 15px #baff002a!important;
+}
+.layout aside .aside-head h3::after {color:#baff00;}
+.layout aside .aside-head {align-items:center!important;}
+/* Magenta sign: move PAPER into its own top-right row, never across the title. */
+.trade-panel .trade-title {
+ padding:48px 12px 20px!important;color:#fff9ff!important;
+ text-align:center!important;overflow:visible;
+}
+.trade-panel .trade-title .neon-title-text {display:block!important;max-width:100%;font-size:clamp(27px,2.5vw,43px);line-height:1.07;}
+.trade-panel .trade-title .pill.demo {top:9px!important;right:12px!important;transform:none!important;font-size:11px!important;z-index:3;}
+.trade-panel .trade-title::after {color:#ff38d0;}
+@media(max-width:1350px){.trade-panel .trade-title .neon-title-text{font-size:clamp(24px,2.3vw,35px)}}
+@media(max-width:700px){.trade-panel .trade-title{padding:46px 10px 16px!important}.trade-panel .trade-title .neon-title-text{font-size:clamp(23px,6vw,35px)}}
+@media(prefers-reduced-motion:reduce){.layout aside .aside-head h3::after,.trade-panel .trade-title::after{animation:none!important}}
+
+/* V31: immersive neon coastal-crime-game visual universe; preserve original interactive mechanics */
+.v21-hero{background:linear-gradient(90deg,#0b0623c9,#16072c85,#0b0623ce),url('/v33-beach-cruise.webp?v=33') center 43%/cover!important}
+.v21-hero-character img,.v21-hero-trophy img{object-fit:cover!important;object-position:center!important;width:100%!important;height:100%!important}
+.v15-top-left .academy-step{background:linear-gradient(0deg,#160923 0%,#180a29c4 43%,#180a2911 100%),url('/v33-street-skater.webp?v=33') center 42%/cover!important}
+.v15-top-left .v17-level-2{background-image:linear-gradient(0deg,#160923 0%,#180a29c4 43%,#180a2911 100%),url('/v33-rooftop-trader.webp?v=33')!important}
+.v15-top-left .v17-level-3{background-image:linear-gradient(0deg,#160923 0%,#180a29c4 43%,#180a2911 100%),url('/v33-chinatown-hacker.webp?v=33')!important}
+.v15-top-left .v17-level-4{background-image:linear-gradient(0deg,#160923 0%,#180a29c4 43%,#180a2911 100%),url('/v33-casino-heist.webp?v=33')!important}
+.v18-score-art img,.community-visual img{object-fit:cover!important}
+
+/* V33 distinct cinematic districts, readable card headings */
+.v15-top-left .academy-step,.v15-top-left .v17-level-2,.v15-top-left .v17-level-3,.v15-top-left .v17-level-4{background-size:cover!important;background-position:center 35%!important}
+
+/* V35 — SUI Vice character splash */
+.sui-vice-art{position:relative;width:100%;overflow:hidden;background:#090b1b;border-bottom:3px solid #ff38ac}.sui-vice-art img{display:block;width:100%;height:auto;object-fit:contain;object-position:center}.sui-vice-note{position:absolute;bottom:0;right:0;padding:7px 12px;background:rgba(4,9,23,.85);color:#cbd5e1;font-size:10px;font-weight:700;letter-spacing:.06em;text-align:right}@media(max-width:650px){.sui-vice-art img{min-height:0;object-fit:contain}.sui-vice-note{font-size:8px;max-width:100%}}
+
+/* V37: clickable Vice City banner */
+.sui-vice-art{position:relative;cursor:pointer;}
+.sui-vice-art:focus-visible{outline:4px solid #baff00;outline-offset:-4px;}
+.sui-vice-art .sui-vice-trade-sticker{position:absolute;left:50%;bottom:3%;transform:translateX(-50%);width:clamp(170px,24%,380px);height:auto;z-index:4;pointer-events:none;filter:drop-shadow(0 3px 12px #120020aa);transition:transform .18s ease;}
+.sui-vice-art:hover .sui-vice-trade-sticker{transform:translateX(-50%) scale(1.055);}
+#trading-terminal{scroll-margin-top:85px;}
+@media(max-width:650px){.sui-vice-art .sui-vice-trade-sticker{width:40%;bottom:5%;}}
+
+/* V38 — compact first-screen banner: show the arcade section on arrival.
+   Keep the original V37 artwork, trading click target and market scripts. */
+.sui-vice-art{height:clamp(240px,25vw,430px);min-height:0;}
+.sui-vice-art>img:first-child{width:100%;height:100%;object-fit:cover;object-position:center 37%;}
+.sui-vice-art .sui-vice-trade-sticker{width:clamp(155px,20%,330px);bottom:3%;}
+@media(max-width:700px){
+  .sui-vice-art{height:clamp(190px,49vw,310px);}
+  .sui-vice-art>img:first-child{object-position:center 36%;}
+  .sui-vice-art .sui-vice-trade-sticker{width:35%;bottom:6%;}
+  .sui-vice-note{font-size:7px;padding:3px 5px;}
+}

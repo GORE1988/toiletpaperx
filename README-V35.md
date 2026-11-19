@@ -1,0 +1,1 @@
+V35: Adds SUI Vice GTA-inspired illustrated hero with fictional likenesses of Adeniyi and EvanWeb3 plus Toilet DUST mascot. Preserves V34 game logic and existing illustrated scenes. Run node server.js. Fan art; no endorsement or affiliation implied.

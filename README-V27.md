@@ -1,0 +1,1 @@
+TOILET PaperX V27 — New slogans, Telegram CTA, distinct arcade sound cues and successful paper trade sound/flash. Run: cd toilet-paperx && node server.js; then http://localhost:3000. Browser audio requires an initial click. No real trades or payments.

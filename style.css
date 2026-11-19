@@ -567,3 +567,22 @@ button:not(:disabled):hover{filter:brightness(1.16)}
   .v21-hero-steps a{font-size:9px!important;padding:4px!important}
   .event-clock span{width:48px!important}
 }
+
+/* V38.2 — keep neon sign text and token identities fully inside their frames */
+.layout aside .aside-head{display:flex!important;min-width:0!important;gap:10px!important}
+.layout aside .aside-head h3{box-sizing:border-box!important;flex:1 1 auto!important;width:auto!important;min-width:0!important;max-width:100%!important;display:flex!important;align-items:center!important;gap:8px!important;font-size:clamp(13px,1.05vw,19px)!important;line-height:1.15!important;overflow-wrap:normal!important;word-break:normal!important;padding:12px 10px!important;white-space:normal!important}
+.layout aside .aside-head h3 .v22-fighter-emblem{flex:0 0 48px!important;width:48px!important;height:52px!important}
+.layout aside .aside-head #market-count{flex:0 0 auto!important;white-space:nowrap!important;font-size:12px!important}
+.layout aside .aside-head h3::after{inset:0!important}
+@media(max-width:850px){
+ .layout>aside{max-height:none!important;overflow:visible!important}
+ .layout aside .markets{display:flex!important;flex-direction:column!important;gap:7px!important;max-height:330px!important;min-height:0!important;overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain}
+ .layout aside .market{box-sizing:border-box!important;width:100%!important;min-width:0!important;flex:0 0 auto!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:space-between!important;gap:8px!important;padding:9px 10px!important;min-height:62px!important}
+ .layout aside .market .market-identity{display:flex!important;flex:1 1 auto!important;min-width:0!important;align-items:center!important;gap:9px!important;overflow:hidden!important}
+ .layout aside .market .market-identity>span:last-child{min-width:0!important;overflow:hidden!important}
+ .layout aside .market .market-identity strong,.layout aside .market .market-identity small{display:block!important;max-width:100%!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}
+ .layout aside .market .market-token-icon{flex:0 0 40px!important;width:40px!important;height:40px!important;display:grid!important;place-items:center!important;overflow:hidden!important}
+ .layout aside .market .market-price{flex:0 0 auto!important;max-width:45%!important;text-align:right!important;min-width:0!important}
+ .layout aside .market .market-price b,.layout aside .market .market-price small{display:block!important;white-space:nowrap!important}
+ .layout aside .aside-head h3{font-size:clamp(13px,3.7vw,19px)!important}
+}

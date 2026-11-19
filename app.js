@@ -12,7 +12,7 @@ function tokenLogo(m){
   const symbol=String(m.symbol||'').toUpperCase();
   const raw=String(m.logoUrl||'');
   const safe=/^https:\/\/[^\s<>"']+$/i.test(raw)?raw:'';
-  const fallback=symbol==='SUI'?'<img class="market-logo" src="/sui-logo.svg" alt="SUI logo" loading="lazy">':(m.change24h>=0?'🚀':'🪙');
+  const fallback=symbol==='SUI'?'<img class="market-logo" src="./sui-logo.svg" alt="SUI logo" loading="lazy">':(m.change24h>=0?'🚀':'🪙');
   if(!safe)return fallback;
   return `<img class="market-logo" src="${esc(safe)}" alt="${esc(m.symbol)} logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="logo-fallback" hidden>${symbol==='SUI'?'💧':m.change24h>=0?'🚀':'🪙'}</span>`;
 }
@@ -69,7 +69,7 @@ const cardTiers=[
 function getCardTier(p){return [...cardTiers].reverse().find(t=>p>=t.min)||cardTiers[0]}
 const cardImageCache=new Map();
 function loadPerformanceCardImage(tier){
- const src='/cards/vice-performance-'+String(tier.art).padStart(2,'0')+'.jpg';
+ const src='./cards/vice-performance-'+String(tier.art).padStart(2,'0')+'.jpg';
  if(!cardImageCache.has(src))cardImageCache.set(src,new Promise((resolve,reject)=>{
   const im=new Image();im.onload=()=>resolve(im);im.onerror=()=>reject(new Error('Vice City card artwork unavailable: '+src));im.src=src;
  }));

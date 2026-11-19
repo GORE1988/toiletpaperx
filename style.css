@@ -518,3 +518,52 @@ button:not(:disabled):hover{filter:brightness(1.16)}
   .sui-vice-art .sui-vice-trade-sticker{width:35%;bottom:6%;}
   .sui-vice-note{font-size:7px;padding:3px 5px;}
 }
+
+/* V38 mobile compact layout — desktop untouched */
+@media (max-width:700px) {
+  html,body{max-width:100%;overflow-x:hidden}
+  header{height:auto!important;min-height:0!important;padding:8px 11px!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:7px!important}
+  header .brand{gap:9px!important;min-height:40px}
+  header .brand .logo-img{width:43px!important;height:43px!important}
+  header .brand strong{font-size:22px!important;letter-spacing:-.7px!important}
+  header .brand small{font-size:8px!important;letter-spacing:1.3px!important}
+  header .head-right{width:100%!important;display:grid!important;grid-template-columns:1fr auto auto!important;gap:6px!important;align-items:center!important}
+  header .head-right .ecosystem{display:none!important}
+  header .head-right .pill.demo{grid-column:1;justify-self:start;transform:none!important;font-size:10px!important;padding:5px 8px!important;letter-spacing:.3px!important}
+  header .head-right #feed-status{grid-column:1/-1;grid-row:2;justify-self:stretch;max-width:100%;overflow:hidden;text-overflow:ellipsis;text-align:center;font-size:10px!important;padding:5px 7px!important}
+  header .head-right #sound-toggle{grid-column:2;grid-row:1;min-width:0!important;font-size:11px!important;padding:7px 8px!important;white-space:nowrap}
+  header .head-right #reset{grid-column:3;grid-row:1;font-size:11px!important;padding:7px 8px!important;white-space:nowrap}
+  .sui-vice-art{height:clamp(175px,47vw,290px)!important}
+  .sui-vice-art .sui-vice-trade-sticker{width:35%!important}
+  .v21-hero{height:auto!important;min-height:135px!important;grid-template-columns:70px minmax(0,1fr)!important;gap:7px!important;margin:5px 5px!important;padding:7px!important}
+  .v21-hero-character{height:132px!important}
+  .v21-hero-trophy{display:none!important}
+  .v21-hero-copy{align-self:center!important}
+  .v21-hero-kicker{font-size:9px!important;letter-spacing:.35px!important;margin-bottom:4px!important}
+  .v21-hero h1{font-size:clamp(23px,5.6vw,34px)!important;line-height:1.05!important;letter-spacing:-.5px!important}
+  .v21-hero p{font-size:9px!important;line-height:1.25!important;margin:5px 0!important}
+  .v21-hero-steps{gap:4px!important;display:flex!important;justify-content:center!important}
+  .v21-hero-steps a{font-size:10px!important;padding:5px 6px!important;min-width:0!important;line-height:1.15!important}
+  .v21-hero-steps .tg-army{flex-basis:auto!important;max-width:100%!important;margin:0!important;font-size:9px!important;white-space:normal!important}
+  .event-bar{margin:5px!important;padding:9px 7px!important;gap:6px!important;display:flex!important;flex-direction:column!important;text-align:center!important}
+  .event-kicker{font-size:9px!important;letter-spacing:.5px!important}
+  .event-title{font-size:clamp(17px,4.5vw,24px)!important;line-height:1.13!important}
+  .event-clock{display:flex!important;gap:5px!important;justify-content:center!important}
+  .event-clock span{min-width:0!important;width:56px!important;padding:5px 4px!important;font-size:23px!important;line-height:1!important}
+  .event-clock small{font-size:8px!important;margin-top:4px!important}
+  .event-link{padding:7px 12px!important;font-size:11px!important}
+  #trading-terminal{scroll-margin-top:8px!important}
+  .layout{grid-template-columns:minmax(0,1fr)!important;padding:0 5px!important;gap:7px!important}
+  .layout aside{padding:9px!important}
+  .layout aside .aside-head h3{padding:8px!important}
+  .layout main{min-width:0!important;padding:7px!important}
+  .workspace,.v15-market-stack{min-width:0!important}
+  .chart,.chart:has(.external-chart){height:370px!important;min-height:370px!important}
+  .external-chart{height:325px!important;min-height:325px!important}
+}
+@media(max-width:375px){
+  .v21-hero{grid-template-columns:58px minmax(0,1fr)!important}
+  .v21-hero-character{height:120px!important}
+  .v21-hero-steps a{font-size:9px!important;padding:4px!important}
+  .event-clock span{width:48px!important}
+}

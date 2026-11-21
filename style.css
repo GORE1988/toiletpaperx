@@ -628,3 +628,15 @@ button:not(:disabled):hover{filter:brightness(1.16)}
     text-shadow: 0 0 9px #b7ff0030;
   }
 }
+
+/* v43: precise margin balance layout. Only this label is affected. */
+@media (min-width: 701px) {
+  .trade-panel .margin-balance-heading { display:flex; flex-direction:row; flex-wrap:nowrap; align-items:baseline; justify-content:space-between; gap:5px; }
+  .trade-panel .margin-balance-heading > span:first-child { white-space:nowrap; font-size:clamp(11px,0.88vw,16px); }
+  .trade-panel .margin-balance-heading > .margin-available { flex-shrink:0; white-space:nowrap; font-size:clamp(10px,0.73vw,13px); color:#b7ff00; }
+}
+@media (max-width: 700px) {
+  .trade-panel .margin-balance-heading { display:flex; flex-direction:column; flex-wrap:nowrap; align-items:flex-start; gap:4px; }
+  .trade-panel .margin-balance-heading > span:first-child { display:block; }
+  .trade-panel .margin-balance-heading > .margin-available { display:block; width:100%; color:#b7ff00; font-size:13px; font-weight:800; white-space:normal; line-height:1.3; text-shadow:0 0 9px #b7ff0030; }
+}

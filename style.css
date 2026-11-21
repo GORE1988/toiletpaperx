@@ -602,3 +602,9 @@ button:not(:disabled):hover{filter:brightness(1.16)}
     padding: 9px 11px !important; min-height: 40px;
   }
 }
+
+/* v41: margin balance label only; preserves the existing trade-panel layout. */
+.trade-panel .margin-balance-heading{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap;width:100%;margin-bottom:6px}
+.trade-panel .margin-available{font-size:clamp(11px,0.95vw,14px);font-weight:800;color:#b7ff00;white-space:nowrap;text-shadow:0 0 9px #b7ff0030}
+.trade-panel .margin-available strong{font:inherit}
+@media(max-width:460px){.trade-panel .margin-balance-heading{gap:3px 8px}.trade-panel .margin-available{font-size:11px}}

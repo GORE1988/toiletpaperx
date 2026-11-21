@@ -26,7 +26,7 @@ async function refreshPositionMarks(){
  if(updated){save();liquidations();renderPositions()}
  else renderPositions();
 }
-function renderBalances(){const locked=state.positions.reduce((s,p)=>s+p.margin,0),u=unreal();$('equity').textContent=usd(state.cash+locked+u);$('cash').textContent=usd(state.cash);$('unrealized').textContent=usd(u);$('unrealized').className=u>=0?'positive':'negative';$('position-count').textContent=state.positions.length;renderChallengeScore()}
+function renderBalances(){const locked=state.positions.reduce((s,p)=>s+p.margin,0),u=unreal();$('equity').textContent=usd(state.cash+locked+u);$('cash').textContent=usd(state.cash);$('margin-available').textContent=Number(state.cash).toLocaleString('en-US',{maximumFractionDigits:2,minimumFractionDigits:2});$('unrealized').textContent=usd(u);$('unrealized').className=u>=0?'positive':'negative';$('position-count').textContent=state.positions.length;renderChallengeScore()}
 function tokenLogo(m){
   // The market provider associates the logo with the token's contract, not just its ticker.
   // Never guess a remote logo by symbol: many unrelated tokens reuse the same ticker.
